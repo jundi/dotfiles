@@ -1,0 +1,59 @@
+#!/bin/bash
+PS1="\[\e[1;32m\]\u@\h:\w$\[\e[0m\] "
+
+
+# completion
+if [[ -f /usr/share/bash-completion/bash_completion ]]; then
+    source /usr/share/bash-completion/bash_completion
+fi
+bind '"\e[Z": menu-complete'            # shift-tab
+bind '"\e\e[Z": menu-complete-backward' # alt-shift-tab
+bind 'set show-all-if-ambiguous on'
+bind 'set page-completions off'
+
+
+# line wrap when terminal is resized
+shopt -s checkwinsize
+
+
+# environment variables
+if [[ $(command -v vim) ]]; then
+    export EDITOR=vim
+    export MANPAGER="vim -c 'set ft=man' -"
+    alias vimdiff='vim -d'
+fi
+if [[ $(command -v firefox) ]]; then
+    export BROWSER=firefox
+fi
+export SYSTEMD_PAGER=''
+
+
+# alias
+alias ls='ls --color=auto --time-style="+%F %H:%M"'
+alias duh='du -h --max-depth=1 | sort -h'
+
+
+# Set terminal title
+case $TERM in
+xterm*|vte*|rxvt*)
+  if [ -e /etc/sysconfig/bash-prompt-xterm ]; then
+      PROMPT_COMMAND=/etc/sysconfig/bash-prompt-xterm
+  elif [ "${VTE_VERSION:-0}" -ge 3405 ]; then
+      PROMPT_COMMAND="__vte_prompt_command"
+  else
+      PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
+  fi
+  ;;
+screen*)
+  if [ -e /etc/sysconfig/bash-prompt-screen ]; then
+      PROMPT_COMMAND=/etc/sysconfig/bash-prompt-screen
+  else
+      PROMPT_COMMAND='printf "\033k%s@%s:%s\033\\" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
+  fi
+  ;;
+*)
+  [ -e /etc/sysconfig/bash-prompt-default ] && PROMPT_COMMAND=/etc/sysconfig/bash-prompt-default
+  ;;
+esac
+
+# vim: set sw=4:

@@ -1,0 +1,34 @@
+!---------------------------
+! looks
+!---------------------------
+urxvt*foreground:white
+urxvt*background:black
+urxvt*scrollstyle:plain
+urxvt*scrollBar_right: true
+urxvt*font: xft:Terminus:size=12,xft:Terminess Powerline:size=12
+
+!---------------------------
+! options
+!---------------------------
+urxvt*cursorBlink:true
+urxvt*savelines:2000
+urxvt*scrollTtyOutput:false
+urxvt*scrollWithBuffer:false
+urxvt*scrollTtyKeypress:false
+
+!---------------------------
+! plugins
+!---------------------------
+urxvt*perl-ext-common:default,matcher,url-picker,clipboard
+! --- matcher
+urxvt*url-launcher:firefox
+! --- url-picker
+urxvt*keysym.M-u:perl:url-picker
+urxvt*urlLauncher:firefox
+! --- clipboard
+urxvt*iso14755:false
+urxvt*.keysym.Control-C:   perl:clipboard:copy
+urxvt*.keysym.Control-V:   perl:clipboard:paste
+urxvt*.keysym.Control-E:   perl:clipboard:paste_escaped
+
+# vim: set ft=xdefaults:
