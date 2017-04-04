@@ -7,7 +7,7 @@ case `whoami` in
     mikkolah) USERCOLOR=21;;
     mikkolai) USERCOLOR=31;;
     junnu)    USERCOLOR=41;;
-    vagrant)  USERCOLOR=51;;
+    vagrant)  USERCOLOR=199;;
     root)     USERCOLOR=9;;  # red
     *)        USERCOLOR=15;; # white
 esac
@@ -18,7 +18,7 @@ case `hostname | cut -d . -f1 | cut -d - -f1` in
     tessu)     HOSTCOLOR=141;;
     pini)      HOSTCOLOR=151;;
     thyratron) HOSTCOLOR=33;;
-    ingest7)   HOSTCOLOR=33;;
+    ingest7)   HOSTCOLOR=128;;
     *)         HOSTCOLOR=15;; # white
 esac
 
