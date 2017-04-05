@@ -5,15 +5,15 @@
 case `whoami` in
     hmikkola) USERCOLOR=81;;
     mikkolah) USERCOLOR=21;;
-    mikkolai) USERCOLOR=31;;
+    mikkolai) USERCOLOR=213;;
     junnu)    USERCOLOR=41;;
     vagrant)  USERCOLOR=199;;
     root)     USERCOLOR=9;;  # red
     *)        USERCOLOR=15;; # white
 esac
 case `hostname | cut -d . -f1 | cut -d - -f1` in
-    taito)     HOSTCOLOR=111;;
-    sisu)      HOSTCOLOR=121;;
+    taito)     HOSTCOLOR=155;;
+    sisu)      HOSTCOLOR=168;;
     merope)    HOSTCOLOR=131;;
     tessu)     HOSTCOLOR=141;;
     pini)      HOSTCOLOR=151;;
