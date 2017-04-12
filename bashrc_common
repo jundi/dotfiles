@@ -49,6 +49,9 @@ fi
 if [[ $(command -v firefox) ]]; then
     export BROWSER=firefox
 fi
+if [[ $(command -v vimpager) ]]; then
+    export PAGER=vimpager
+fi
 export SYSTEMD_PAGER=''
 
 
