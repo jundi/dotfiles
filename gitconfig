@@ -1,0 +1,13 @@
+[color]
+	ui = true
+[core]
+	editor = vim
+[push]
+	default = simple
+[merge]
+	ff = only
+[alias]
+	co = checkout
+	br = branch -a -vv
+	st = status
+	lo = log --graph --full-history --all
