@@ -2,25 +2,11 @@
 
 
 # Command prompt colors
-case `whoami` in
-    hmikkola) USERCOLOR=81;;
-    mikkolah) USERCOLOR=21;;
-    mikkolai) USERCOLOR=213;;
-    junnu)    USERCOLOR=41;;
-    vagrant)  USERCOLOR=199;;
-    root)     USERCOLOR=9;;  # red
-    *)        USERCOLOR=15;; # white
-esac
-case `hostname | cut -d . -f1 | cut -d - -f1` in
-    taito)     HOSTCOLOR=155;;
-    sisu)      HOSTCOLOR=168;;
-    merope)    HOSTCOLOR=131;;
-    tessu)     HOSTCOLOR=141;;
-    pini)      HOSTCOLOR=151;;
-    thyratron) HOSTCOLOR=33;;
-    ingest7)   HOSTCOLOR=128;;
-    *)         HOSTCOLOR=15;; # white
-esac
+str2int(){
+ echo $1 | sha1sum | sed 's/[^0-9]*//g' | xargs -I{} expr {} % $2
+}
+USERCOLOR=$(str2int `whoami` 256)
+HOSTCOLOR=$(str2int `hostname | cut -d . -f1 | cut -d - -f1` 256)
 
 # Command prompt
 PS1="\[\e[1;38;5;${USERCOLOR}m\]\u\[\e[1;38;5;${HOSTCOLOR}m\]@\h:\w$\[\e[0m\] "
