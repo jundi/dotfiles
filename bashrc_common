@@ -3,10 +3,10 @@
 
 # Command prompt colors
 str2int(){
- echo $1 | sha1sum | sed 's/[^0-9]*//g' | xargs -I{} expr {} % $2
+ echo $1 | sha1sum | sed 's/[^0-9]*//g' | cut -c1-6 | xargs -I{} expr {} % $2 + 1
 }
-USERCOLOR=$(str2int `whoami` 256)
-HOSTCOLOR=$(str2int `hostname | cut -d . -f1 | cut -d - -f1` 256)
+USERCOLOR=$(str2int `whoami` 229)
+HOSTCOLOR=$(str2int `hostname | cut -d . -f1 | cut -d - -f1` 229)
 
 # Command prompt
 PS1="\[\e[1;38;5;${USERCOLOR}m\]\u\[\e[1;38;5;${HOSTCOLOR}m\]@\h:\w$\[\e[0m\] "
