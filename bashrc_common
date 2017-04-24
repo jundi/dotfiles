@@ -29,8 +29,10 @@ shopt -s checkwinsize
 # environment variables
 if [[ $(command -v vim) ]]; then
     export EDITOR=vim
-    export MANPAGER="vim -c 'set ft=man' -"
     alias vimdiff='vim -d'
+fi
+if [[ $(command -v nvim) ]]; then
+    export MANPAGER="nvim -c 'set ft=man' -"
 fi
 if [[ $(command -v firefox) ]]; then
     export BROWSER=firefox
