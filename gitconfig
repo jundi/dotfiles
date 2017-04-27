@@ -6,6 +6,7 @@
 	default = simple
 [merge]
 	ff = only
+	tool = vimdiff
 [alias]
 	co = checkout
 	br = branch -a -vv
