@@ -33,7 +33,11 @@ if [[ $(command -v vim) ]]; then
 fi
 if [[ $(command -v nvim) ]]; then
     export MANPAGER="nvim -c 'set ft=man' -"
-    export PAGER="nvim -"
+    alias vimdiff='nvim -d'
+    export EDITOR=nvim
+fi
+if [[ $(command -v vimpager) ]]; then
+    export PAGER="vimpager"
 fi
 if [[ $(command -v firefox) ]]; then
     export BROWSER=firefox
