@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # global bash_profile
-if [[ -f ~/etc/profile ]]; then
+if [[ -f /etc/profile ]]; then
     source /etc/profile
 fi
 
