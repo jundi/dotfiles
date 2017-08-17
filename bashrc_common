@@ -16,10 +16,12 @@ PS1="\[\e[1;38;5;${USERCOLOR}m\]\u\[\e[1;38;5;${HOSTCOLOR}m\]@\h:\w$\[\e[0m\] "
 if [[ -f /usr/share/bash-completion/bash_completion ]]; then
     source /usr/share/bash-completion/bash_completion
 fi
-bind '"\e[Z": menu-complete'            # shift-tab
-bind '"\e\e[Z": menu-complete-backward' # alt-shift-tab
-bind 'set show-all-if-ambiguous on'
-bind 'set page-completions off'
+if [[ -t 1 ]]; then
+    bind '"\e[Z": menu-complete'            # shift-tab
+    bind '"\e\e[Z": menu-complete-backward' # alt-shift-tab
+    bind 'set show-all-if-ambiguous on'
+    bind 'set page-completions off'
+fi
 
 
 # line wrap when terminal is resized
