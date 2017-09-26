@@ -14,4 +14,3 @@
 	co = checkout
 	br = branch -a -vv
 	st = status
-	lo = log --graph --full-history --all
