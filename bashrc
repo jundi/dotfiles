@@ -78,4 +78,10 @@ case $TERM in
 	;;
 esac
 
+# Current directory for termite
+if [[ $TERM == xterm-termite ]]; then
+  . /etc/profile.d/vte.sh
+  __vte_prompt_command
+fi
+
 # vim: set sw=4:
