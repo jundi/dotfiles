@@ -56,7 +56,11 @@ export SYSTEMD_PAGER=''
 
 
 # alias
-alias ls='ls --color=auto --time-style="+%F %H:%M"'
+if [[ -v exa ]]; then
+    alias ls='exa --color=auto --time-style=long-iso'
+else
+    alias ls='ls --color=auto --time-style="+%F %H:%M"'
+fi
 alias duh='du -h --max-depth=1 | sort -h'
 
 
