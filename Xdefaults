@@ -19,7 +19,8 @@ urxvt*scrollTtyKeypress:false
 !---------------------------
 ! plugins
 !---------------------------
-urxvt*perl-ext-common:default,matcher,url-picker,clipboard
+urxvt*perl-lib:~/.urxvt/ext
+urxvt*perl-ext-common:default,matcher,url-picker,clipboard,vim-scrollback
 ! --- matcher
 urxvt*url-launcher:firefox
 ! --- url-picker
@@ -30,5 +31,17 @@ urxvt*iso14755:false
 urxvt*.keysym.Control-C:   perl:clipboard:copy
 urxvt*.keysym.Control-V:   perl:clipboard:paste
 urxvt*.keysym.Control-E:   perl:clipboard:paste_escaped
+! --- vim-scrollback
+! configure alt-s as the keybinding to enter vim scrollback mode.
+urxvt*.vim-scrollback: M-s
+! configure alt-p as the keybinding to paste mode.
+urxvt*.vim-scrollback-paste: M-p
+! configure the background and foreground colors used for the status bar while
+! in scrollback mode.
+urxvt*.vim-scrollback-bg: 16
+urxvt*.vim-scrollback-fg: 10
+! configure vim-scrollback specific matchers
+urxvt*.vim-scrollback.pattern.1: \\B(/\\S+?):(\\d+)(?=:|$)
+urxvt*.vim-scrollback.launcher.1: gvim +$2 $1
 
 # vim: set ft=xdefaults:
