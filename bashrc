@@ -64,6 +64,10 @@ fi
 alias duh='du -h --max-depth=1 | sort -h'
 
 
+# functions
+function pwf() { file=$(ls $1) && echo $(pwd)/$file; }
+
+
 # Set terminal title
 case $TERM in
     xterm*|vte*|rxvt*)
