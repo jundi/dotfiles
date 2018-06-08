@@ -79,7 +79,7 @@ case $TERM in
 esac
 
 # Current directory for termite
-if [[ $TERM == xterm-termite ]]; then
+if [[ $TERM == xterm-termite ]] && [[ -f /etc/profile.d/vte.sh ]]; then
   . /etc/profile.d/vte.sh
   __vte_prompt_command
 fi
