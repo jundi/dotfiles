@@ -62,6 +62,7 @@ else
     alias ls='ls --color=auto --time-style="+%F %H:%M"'
 fi
 alias duh='du -h --max-depth=1 | sort -h'
+alias PluginInstall="vim +PluginInstall +qall"
 
 
 # functions
