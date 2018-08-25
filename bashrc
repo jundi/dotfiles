@@ -66,7 +66,7 @@ alias PluginInstall="vim +PluginInstall +qall"
 
 
 # functions
-function pwf() { file=$(ls $1) && echo $(pwd)/$file; }
+function pwf() { file=$(ls "$1") && echo $(pwd)/$file; }
 
 
 # Set terminal title
