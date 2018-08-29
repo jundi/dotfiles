@@ -63,6 +63,7 @@ else
 fi
 alias duh='du -h --max-depth=1 | sort -h'
 alias PluginInstall="vim +PluginInstall +qall"
+alias venv='virtualenv venv && . ./venv/bin/activate && pip install pip --upgrade'
 
 
 # functions
