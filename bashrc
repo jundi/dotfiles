@@ -19,6 +19,7 @@ fi
 if [[ -t 1 ]]; then
     bind '"\e[Z": menu-complete'            # shift-tab
     bind '"\e\e[Z": menu-complete-backward' # alt-shift-tab
+    bind '"^[,": "!!\n"'                    # alt-,
     bind 'set show-all-if-ambiguous on'
     bind 'set page-completions off'
 fi
@@ -73,11 +74,11 @@ function pwf() { file=$(ls "$1") && echo $(pwd)/$file; }
 # Set terminal title
 case $TERM in
     xterm*|vte*|rxvt*)
-	PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
-	;;
+        PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
+        ;;
     screen*)
-	PROMPT_COMMAND='printf "\033k%s@%s:%s\033\\" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
-	;;
+        PROMPT_COMMAND='printf "\033k%s@%s:%s\033\\" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
+        ;;
 esac
 
 # Current directory for termite
