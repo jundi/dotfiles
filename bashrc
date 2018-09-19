@@ -54,6 +54,7 @@ elif [[ $(command -v firefox) ]]; then
     export BROWSER=firefox
 fi
 export SYSTEMD_PAGER=''
+export ANSIBLE_STDOUT_CALLBACK=debug
 
 
 # alias
