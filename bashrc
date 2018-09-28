@@ -65,7 +65,7 @@ else
 fi
 alias duh='du -h --max-depth=1 | sort -h'
 alias PluginInstall="vim +PluginInstall +qall"
-alias venv='rm -rI venv && [[ -d venv ]] || virtualenv venv && . ./venv/bin/activate && pip install pip pytest --upgrade'
+alias venv='[[ -d venv ]] && rm -rI venv && [[ -d venv ]] || virtualenv venv && . ./venv/bin/activate && pip install pip pytest --upgrade'
 
 
 # functions
