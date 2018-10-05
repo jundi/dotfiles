@@ -59,7 +59,7 @@ export ANSIBLE_STDOUT_CALLBACK=debug
 
 # alias
 if [[ $(command -v exa) ]]; then
-    alias ls='exa --color=auto --time-style=long-iso'
+    alias ls='exa -g --color=auto --time-style=long-iso'
 else
     alias ls='ls --color=auto --time-style="+%F %H:%M"'
 fi
