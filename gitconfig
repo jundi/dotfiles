@@ -16,3 +16,4 @@
 	st = status
 	lp = log -p -n 5
 	df = git diff
+	dc = diff --cached
