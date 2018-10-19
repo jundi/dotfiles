@@ -13,7 +13,7 @@
 [alias]
 	co = checkout
 	br = branch -a -vv
-	st = status
+	st = status --ignored
 	lp = log -p -n 5
 	df = git diff
 	dc = diff --cached
