@@ -66,6 +66,7 @@ fi
 alias duh='du -h --max-depth=1 | sort -h'
 alias PluginInstall="vim +PluginClean +PluginInstall +qall"
 alias venv='[[ -d venv ]] && rm -rI venv && [[ -d venv ]] || virtualenv venv && . ./venv/bin/activate && pip install pip pytest --upgrade'
+alias whatismyip='curl https://api.ipify.org'
 
 
 # functions
