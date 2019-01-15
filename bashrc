@@ -68,6 +68,7 @@ alias PluginInstall="vim +PluginClean +PluginInstall +qall"
 alias venv='[[ -d venv ]] && rm -rI venv && [[ -d venv ]] || virtualenv venv && . ./venv/bin/activate && pip install pip pytest --upgrade'
 alias whatismyip='curl https://api.ipify.org'
 alias wrap="tput rmam; fc -s;tput smam"
+alias vam='ansible-vault edit'
 
 
 # functions
