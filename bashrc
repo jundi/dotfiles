@@ -56,11 +56,7 @@ export ANSIBLE_STDOUT_CALLBACK=debug
 
 
 # alias
-if [[ $(command -v exa) ]]; then
-    alias ls='exa -g --color=auto --time-style=long-iso'
-else
-    alias ls='ls --color=auto --time-style="+%F %H:%M"'
-fi
+alias ls='ls --color=auto --time-style="+%F %H:%M"'
 alias duh='du -h --max-depth=1 | sort -h'
 alias PluginInstall="vim +PluginClean +PluginInstall +qall"
 alias venv='[[ -d venv ]] && rm -rI venv && [[ -d venv ]] || virtualenv venv && . ./venv/bin/activate && pip install pip pytest --upgrade'
