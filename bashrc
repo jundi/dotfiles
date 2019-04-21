@@ -11,6 +11,10 @@ HOSTCOLOR=$(str2int `hostname | cut -d . -f1 | cut -d - -f1` 229)
 # Command prompt
 PS1="\[\e[1;38;5;${USERCOLOR}m\]\u\[\e[1;38;5;${HOSTCOLOR}m\]@\h:\w$\[\e[0m\] "
 
+# ls colors
+if [[ -f /usr/share/LS_COLORS/dircolors.sh ]]; then
+    source /usr/share/LS_COLORS/dircolors.sh
+fi
 
 # completion
 if [[ -f /usr/share/bash-completion/bash_completion ]]; then
