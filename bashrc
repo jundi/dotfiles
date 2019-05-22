@@ -36,6 +36,9 @@ shopt -s checkwinsize
 
 
 # environment variables
+if [[ $(command -v gnome-terminal) ]]; then
+    export TERMINAL=gnome-terminal
+fi
 if [[ $(command -v urxvt) ]]; then
     export TERMINAL=urxvt
 fi
