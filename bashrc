@@ -76,6 +76,7 @@ alias vam='ansible-vault edit'
 
 # functions
 function pwf() { file=$(ls "$1") && echo $(pwd)/$file; }
+function findn() { find -name "*$1*";}
 
 
 # Set terminal title
