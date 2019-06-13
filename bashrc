@@ -25,7 +25,6 @@ fi
 if [[ -t 1 ]]; then
     bind '"\e[Z": menu-complete'            # shift-tab
     bind '"\e\e[Z": menu-complete-backward' # alt-shift-tab
-    bind '"\e,": "cd ..\n"'                 # alt-,
     bind 'set show-all-if-ambiguous on'
     bind 'set page-completions off'
 fi
@@ -78,6 +77,11 @@ alias vam='ansible-vault edit'
 function pwf() { file=$(ls "$1") && echo $(pwd)/$file; }
 function findn() { find -name "*$1*";}
 
+
+# keybindings
+if [[ -t 1 ]]; then
+    bind '"\e,": "cd ..\n"' # alt-,
+fi
 
 # Set terminal title
 case $TERM in
