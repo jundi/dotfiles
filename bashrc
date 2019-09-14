@@ -23,8 +23,8 @@ if [[ -f /usr/share/bash-completion/bash_completion ]]; then
     source /usr/share/bash-completion/bash_completion
 fi
 if [[ -t 1 ]]; then
-    bind '"\e[Z": menu-complete'            # shift-tab
-    bind '"\e\e[Z": menu-complete-backward' # alt-shift-tab
+    bind '"\e[Z": menu-complete'             # shift-tab
+    bind '"\e[1;2P": menu-complete-backward' # shift-F1
     bind 'set show-all-if-ambiguous on'
     bind 'set page-completions off'
 fi
