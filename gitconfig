@@ -16,5 +16,5 @@
 	st = status
 	sti = status --ignored
 	lp = log -p -n 5
-	df = git diff
+	df = diff
 	dc = diff --cached
