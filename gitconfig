@@ -18,3 +18,4 @@
 	lp = log -p -n 5
 	df = diff
 	dc = diff --cached
+	tn = tag -n9
