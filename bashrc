@@ -68,6 +68,7 @@ alias venv='source ~/.opt/scripts/venv.sh'
 alias whatismyip='curl https://api.ipify.org'
 alias wrap="tput rmam; fc -s;tput smam"
 alias vam='ansible-vault edit'
+alias ms='md5sum'
 
 
 # functions
