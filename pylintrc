@@ -2,3 +2,4 @@
 init-hook="
     from pylint_venv import inithook
     inithook()"
+extension-pkg-whitelist=lxml.etree
