@@ -64,7 +64,7 @@ export ANSIBLE_STDOUT_CALLBACK=debug
 alias ls='ls --color=auto --time-style="+%F %H:%M"'
 alias duh='du -h --max-depth=1 | sort -h'
 alias PluginInstall="vim +PluginClean +PluginInstall +qall"
-alias venv='source ~/.opt/scripts/venv.sh'
+alias venv="bash --rcfile <(echo 'source ~/.bashrc; source ~/.opt/scripts/venv.sh')"
 alias whatismyip='curl https://api.ipify.org'
 alias wrap="tput rmam; fc -s;tput smam"
 alias vam='ansible-vault edit'
