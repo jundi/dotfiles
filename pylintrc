@@ -1,5 +1,6 @@
 [master]
-init-hook="
-    from pylint_venv import inithook
-    inithook()"
+init-hook=
+    try: import pylint_venv
+    except ImportError: pass
+    else: pylint_venv.inithook()
 extension-pkg-whitelist=lxml.etree
