@@ -1,5 +1,6 @@
 xsetroot -cursor_name left_ptr
 setxkbmap -option compose:rwin
+setxkbmap -option compose:rctrl-altgr
 setxkbmap -option keypad:pointerkeys
 xmodmap ~/.Xmodmap
 [[ -f ~/.nvidia-settings-rc ]] && . ~/.nvidia-settings-rc
