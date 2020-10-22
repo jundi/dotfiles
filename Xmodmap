@@ -1,1 +1,3 @@
-keycode  34 = slash quotedbl Aring Aring aring Aring
+keycode  21 = acute grave equal plus dead_cedilla dead_ogonek
+keycode  34 = slash bar Aring aring quotedbl Aring
+keycode  35 = diaeresis asciicircum bracketright braceright asciitilde dead_macron
