@@ -5,6 +5,7 @@ user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.fixup.alternate.prefix", "");
+user_pref("browser.fixup.fallback-to-https", false);
 user_pref("general.smoothScroll", false);
 user_pref("accessibility.force_disabled", 1);
 user_pref("browser.startup.homepage", "about:blank");
