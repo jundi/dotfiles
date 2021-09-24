@@ -15,3 +15,4 @@ user_pref("browser.download.dir", "~/downloads");
 user_pref("browser.ctrlTab.recentlyUsedOrder", false);
 user_pref("browser.shell.checkDefaultBrowser", true);
 user_pref("privacy.donottrackheader.enabled", true);
+user_pref("permissions.default.geo", 2);
