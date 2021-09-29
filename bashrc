@@ -74,6 +74,7 @@ alias ms='md5sum'
 # functions
 function pwf() { file=$(ls "$1") && echo $(pwd)/$file; }
 function findn() { find -name "*$1*";}
+function rmlink() { rm -i "`readlink -f "$1"`"; }
 
 
 # keybindings
