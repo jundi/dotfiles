@@ -84,7 +84,7 @@ fi
 
 # Set terminal title
 case $TERM in
-    xterm*|vte*|rxvt*)
+    xterm*|vte*|rxvt*|alacritty)
         PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
         ;;
     screen*)
