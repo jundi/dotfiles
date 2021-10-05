@@ -41,12 +41,15 @@ fi
 if [[ $(command -v termite) ]]; then
     export TERMINAL=termite
 fi
+if [[ $(command -v alacritty) ]]; then
+    export TERMINAL=alacritty
+fi
 if [[ $(command -v vim) ]]; then
     export EDITOR=vim
     alias vimdiff='vim -d'
 fi
 if [[ $(command -v nvim) ]]; then
-    export MANPAGER="nvim -c 'set ft=man' -"
+    export MANPAGER="nvim -c '%! col -b' -c 'set ft=man nomod' -"
     alias vimdiff='nvim -d'
     export EDITOR=nvim
 fi
