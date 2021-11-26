@@ -21,3 +21,5 @@
 	df = diff
 	dc = diff --cached
 	tn = tag -n9
+[include]
+	path = ~/.gitconfig.local
