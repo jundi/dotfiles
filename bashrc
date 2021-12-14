@@ -61,6 +61,7 @@ if [[ $(command -v firefox) ]]; then
 fi
 export SYSTEMD_PAGER=''
 export ANSIBLE_STDOUT_CALLBACK=debug
+export PYTHONPATH=.
 
 
 # alias
