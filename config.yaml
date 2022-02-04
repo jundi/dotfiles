@@ -6,7 +6,63 @@ dotfiles:
   f_bashrc:
     src: bashrc
     dst: ~/.bashrc
+  f_bash_profile:
+    src: bash_profile
+    dst: ~/.bash_profile
+  f_config:
+    src: config/waybar/config
+    dst: ~/.config/waybar/config
+  f_style.css:
+    src: config/waybar/style.css
+    dst: ~/.config/waybar/style.css
+  f_alacritty.yml:
+    src: config/alacritty.yml
+    dst: ~/.config/alacritty.yml
+  f_ansible.cfg:
+    src: ansible.cfg
+    dst: ~/.ansible.cfg
+  f_flake8:
+    src: config/flake8
+    dst: ~/.config/flake8
+  f_config.ini:
+    src: config/gammastep/config.ini
+    dst: ~/.config/gammastep/config.ini
+  f_git_config:
+    src: config/git/config
+    dst: ~/.config/git/config
+  f_kanshi_config:
+    src: config/kanshi/config
+    dst: ~/.config/kanshi/config
+  f_npmrc:
+    src: npmrc
+    dst: ~/.npmrc
+  f_pylintrc:
+    src: config/pylintrc
+    dst: ~/.config/pylintrc
+  f_rifle.conf:
+    src: config/ranger/rifle.conf
+    dst: ~/.config/ranger/rifle.conf
+  f_rofi-pass_config:
+    src: config/rofi-pass/config
+    dst: ~/.config/rofi-pass/config
+  f_yamllint_config:
+    src: config/yamllint/config
+    dst: ~/.config/yamllint/config
 profiles:
   default:
     dotfiles:
     - f_bashrc
+    - f_bash_profile
+    - f_config
+    - f_style.css
+    - f_alacritty.yml
+    - f_ansible.cfg
+    - f_flake8
+    - f_config.ini
+    - f_git_config
+    - f_kanshi_config
+    - f_npmrc
+    - f_pylintrc
+    - f_rifle.conf
+    - f_rofi-pass_config
+    - f_yamllint_config
