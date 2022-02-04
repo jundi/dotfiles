@@ -7,6 +7,6 @@ dotfiles:
     src: bashrc
     dst: ~/.bashrc
 profiles:
-  nero:
+  default:
     dotfiles:
     - f_bashrc
