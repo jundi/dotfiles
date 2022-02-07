@@ -51,6 +51,42 @@ dotfiles:
   f_sway_config:
     src: config/sway/config
     dst: ~/.config/sway/config
+  f_plugins.vim:
+    src: config/nvim/plugins.vim
+    dst: ~/.config/nvim/plugins.vim
+  f_init.vim:
+    src: config/nvim/init.vim
+    dst: ~/.config/nvim/init.vim
+  f_help.vim:
+    src: config/nvim/ftplugin/help.vim
+    dst: ~/.config/nvim/ftplugin/help.vim
+  f_html.vim:
+    src: config/nvim/ftplugin/html.vim
+    dst: ~/.config/nvim/ftplugin/html.vim
+  f_javascript.vim:
+    src: config/nvim/ftplugin/javascript.vim
+    dst: ~/.config/nvim/ftplugin/javascript.vim
+  f_json.vim:
+    src: config/nvim/ftplugin/json.vim
+    dst: ~/.config/nvim/ftplugin/json.vim
+  f_python.vim:
+    src: config/nvim/ftplugin/python.vim
+    dst: ~/.config/nvim/ftplugin/python.vim
+  f_rst.vim:
+    src: config/nvim/ftplugin/rst.vim
+    dst: ~/.config/nvim/ftplugin/rst.vim
+  f_tex.vim:
+    src: config/nvim/ftplugin/tex.vim
+    dst: ~/.config/nvim/ftplugin/tex.vim
+  f_typescript.vim:
+    src: config/nvim/ftplugin/typescript.vim
+    dst: ~/.config/nvim/ftplugin/typescript.vim
+  f_xml.vim:
+    src: config/nvim/ftplugin/xml.vim
+    dst: ~/.config/nvim/ftplugin/xml.vim
+  d_vimbackup:
+    src: vimbackup
+    dst: ~/.vimbackup
 profiles:
   default:
     dotfiles:
@@ -70,3 +106,15 @@ profiles:
     - f_rofi-pass_config
     - f_yamllint_config
     - f_sway_config
+    - f_plugins.vim
+    - f_init.vim
+    - f_help.vim
+    - f_html.vim
+    - f_javascript.vim
+    - f_json.vim
+    - f_python.vim
+    - f_rst.vim
+    - f_tex.vim
+    - f_typescript.vim
+    - f_xml.vim
+    - d_vimbackup
