@@ -48,6 +48,9 @@ dotfiles:
   f_yamllint_config:
     src: config/yamllint/config
     dst: ~/.config/yamllint/config
+  f_sway_config:
+    src: config/sway/config
+    dst: ~/.config/sway/config
 profiles:
   default:
     dotfiles:
@@ -66,3 +69,4 @@ profiles:
     - f_rifle.conf
     - f_rofi-pass_config
     - f_yamllint_config
+    - f_sway_config
