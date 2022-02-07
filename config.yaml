@@ -55,9 +55,9 @@ dotfiles:
     src: config/nvim/plugins.vim
     dst: ~/.config/nvim/plugins.vim
     actions:
-      - vim-plug-install
-      - vim-plug
-      - vimpager
+    - vim-plug-install
+    - vim-plug
+    - vimpager
   f_init.vim:
     src: config/nvim/init.vim
     dst: ~/.config/nvim/init.vim
@@ -71,7 +71,7 @@ dotfiles:
     src: config/nvim/ftplugin/javascript.vim
     dst: ~/.config/nvim/ftplugin/javascript.vim
     actions:
-      - vue.vim
+    - vue.vim
   f_json.vim:
     src: config/nvim/ftplugin/json.vim
     dst: ~/.config/nvim/ftplugin/json.vim
@@ -93,10 +93,24 @@ dotfiles:
   d_vimbackup:
     src: vimbackup
     dst: ~/.vimbackup
+  f_sshterm.sh:
+    src: opt/scripts/sshterm.sh
+    dst: ~/.opt/scripts/sshterm.sh
+  f_venv.sh:
+    src: opt/scripts/venv.sh
+    dst: ~/.opt/scripts/venv.sh
+  f_showclipboard.sh:
+    src: opt/scripts/showclipboard.sh
+    dst: ~/.opt/scripts/showclipboard.sh
+  f_paswitchsink.sh:
+    src: opt/scripts/paswitchsink.sh
+    dst: ~/.opt/scripts/paswitchsink.sh
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
-  vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  vim-plug: nvim -u NORC '+source ~/.config/nvim/init.vim' +PlugUpdate +UpdateRemotePlugins +qall
+  vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  vim-plug: nvim -u NORC '+source ~/.config/nvim/init.vim' +PlugUpdate +UpdateRemotePlugins
+    +qall
   vimpager: ln -s ~/.config/nvim/plugged/vimpager/vimpager ~/.opt/bin/
 profiles:
   default:
@@ -129,3 +143,7 @@ profiles:
     - f_typescript.vim
     - f_xml.vim
     - d_vimbackup
+    - f_sshterm.sh
+    - f_venv.sh
+    - f_showclipboard.sh
+    - f_paswitchsink.sh
