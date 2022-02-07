@@ -49,7 +49,7 @@ if [[ $(command -v vim) ]]; then
     alias vimdiff='vim -d'
 fi
 if [[ $(command -v nvim) ]]; then
-    export MANPAGER="nvim -c '%! col -b' -c 'set ft=man nomod' -"
+    export MANPAGER="nvim -c 'set ft=man' -"
     alias vimdiff='nvim -d'
     export EDITOR=nvim
 fi
