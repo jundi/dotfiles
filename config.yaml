@@ -66,6 +66,8 @@ dotfiles:
   f_javascript.vim:
     src: config/nvim/ftplugin/javascript.vim
     dst: ~/.config/nvim/ftplugin/javascript.vim
+    actions:
+      - vue.vim
   f_json.vim:
     src: config/nvim/ftplugin/json.vim
     dst: ~/.config/nvim/ftplugin/json.vim
@@ -87,6 +89,8 @@ dotfiles:
   d_vimbackup:
     src: vimbackup
     dst: ~/.vimbackup
+actions:
+  vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
 profiles:
   default:
     dotfiles:
