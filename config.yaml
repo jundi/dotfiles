@@ -61,6 +61,8 @@ dotfiles:
   f_init.vim:
     src: config/nvim/init.vim
     dst: ~/.config/nvim/init.vim
+    actions:
+    - vimbackup
   f_help.vim:
     src: config/nvim/ftplugin/help.vim
     dst: ~/.config/nvim/ftplugin/help.vim
@@ -90,9 +92,6 @@ dotfiles:
   f_xml.vim:
     src: config/nvim/ftplugin/xml.vim
     dst: ~/.config/nvim/ftplugin/xml.vim
-  d_vimbackup:
-    src: vimbackup
-    dst: ~/.vimbackup
   f_sshterm.sh:
     src: opt/scripts/sshterm.sh
     dst: ~/.opt/scripts/sshterm.sh
@@ -111,7 +110,8 @@ actions:
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   vim-plug: nvim -u NORC '+source ~/.config/nvim/init.vim' +PlugUpdate +UpdateRemotePlugins
     +qall
-  vimpager: ln -s ~/.config/nvim/plugged/vimpager/vimpager ~/.opt/bin/
+  vimpager: mkdir -p ~/.opt/bin/ && ln -s ~/.config/nvim/plugged/vimpager/vimpager ~/.opt/bin/
+  vimbackup: mkdir -p ~/.vimbackup
 profiles:
   default:
     dotfiles:
@@ -131,8 +131,8 @@ profiles:
     - f_rofi-pass_config
     - f_yamllint_config
     - f_sway_config
-    - f_plugins.vim
     - f_init.vim
+    - f_plugins.vim
     - f_help.vim
     - f_html.vim
     - f_javascript.vim
@@ -142,7 +142,6 @@ profiles:
     - f_tex.vim
     - f_typescript.vim
     - f_xml.vim
-    - d_vimbackup
     - f_sshterm.sh
     - f_venv.sh
     - f_showclipboard.sh
