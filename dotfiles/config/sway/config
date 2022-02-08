@@ -276,6 +276,7 @@ bindsym $alt+Print  exec grimshot --notify save output
 bindsym Ctrl+Print  exec grimshot --notify save window
 
 # autostart
+exec dunst
 exec rocketchat-desktop
 exec waybar
 exec gammastep-indicator
