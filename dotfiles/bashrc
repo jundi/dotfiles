@@ -102,4 +102,8 @@ if [[ $TERM == xterm-termite ]] && [[ -f /etc/profile.d/vte.sh ]]; then
   . /etc/profile.d/vte.sh
 fi
 
+if [[ -f ~/.bashrc.local ]]; then
+    source ~/.bashrc.local
+fi
+
 # vim: set sw=4:
