@@ -14,5 +14,5 @@ if [[ $server == $(hostname -s) || $server == "localhost" ]]; then
 	fullpath=$(echo $path | sed "s/~/\/home\/$(whoami)/")
 	alacritty --working-directory $fullpath
 else
-	alacritty --hold -e "ssh $server -t \"export TERM=xterm-256color; cd $path; bash --login\""
+	alacritty --hold -e ssh $server -t "export TERM=xterm-256color; cd $path; bash --login"
 fi

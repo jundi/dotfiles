@@ -249,7 +249,7 @@ bindsym $mod+z exec firefox
 bindsym $mod+m exec $MUA
 bindsym $mod+x exec gnome-calendar
 bindsym $mod+a exec $term
-bindsym $mod+u exec $term -e "ssh $DEFAULT_VM"
+bindsym $mod+u exec $term -e ssh vm
 bindsym $mod+Shift+a exec bash ~/.opt/scripts/sshterm.sh localhost
 bindsym $mod+Shift+u exec bash ~/.opt/scripts/sshterm.sh
 bindsym $mod+Shift+z exec firefox --private-window
