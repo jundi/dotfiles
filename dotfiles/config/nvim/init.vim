@@ -106,4 +106,4 @@ let g:vim_markdown_folding_disabled = 1
 let g:riv_fold_auto_update = 0
 
 " Pylint
-let g:ale_python_pylint_options = '--rcfile ~/.pylintrc'
+let g:ale_python_pylint_options = '--rcfile ~/.config/pylintrc'
