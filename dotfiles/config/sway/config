@@ -256,7 +256,7 @@ bindsym $mod+Shift+z exec firefox --private-window
 bindsym $mod+o exec swaylock -c 151530
 bindsym $mod+Shift+o exec exec swayidle -w timeout 1 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on "; pkill -nx swayidle'
 bindsym $mod+c exec sh ~/.opt/scripts/showclipboard.sh
-bindsym $mod+Shift+c exec xsel -p | xsel -b -i
+bindsym $mod+Shift+c exec wl-paste -p | wl-copy
 bindsym XF86Sleep exec swaylock -c 151530
 bindsym XF86MonBrightnessDown exec brightnessctl s 10%-
 bindsym XF86MonBrightnessUp exec brightnessctl s +10%
