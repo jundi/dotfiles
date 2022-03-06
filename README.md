@@ -1,6 +1,13 @@
 # dotfiles
 
 ## Installation
+### Arch linux
+
+Install requirements
+```
+aurget -S dotdrop pa-notify
+pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard kanshi dunst jq pulsemixer yapf
+```
 
 ### Ubuntu
 
