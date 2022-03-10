@@ -24,5 +24,10 @@
 
 {
 	output eDP-1 position 0,0
+	output DP-5 position 1920,0
+}
+
+{
+	output eDP-1 position 0,0
 	output HDMI-A-1 position 1920,0
 }
