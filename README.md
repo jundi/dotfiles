@@ -18,7 +18,10 @@ pip install --user dotdrop pulsemixer yapf
 apt-get install cargo
 cargo install alacritty
 ```
-pa-notify must be compiled: https://github.com/ikrivosheev/pa-notify
+Manually install requirements that are not available from software repositories:
+
+- https://github.com/ikrivosheev/pa-notify
+- https://raw.githubusercontent.com/carnager/rofi-pass
 
 Install ALE compatible linters:
 ```

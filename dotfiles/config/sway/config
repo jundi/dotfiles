@@ -243,7 +243,7 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 # Keyboard shortcuts
-bindsym $mod+Shift+m exec sh rofi-pass
+bindsym $mod+Shift+m exec rofi-pass
 bindsym $mod+n exec nmcli d wifi rescan
 bindsym $mod+z exec firefox
 bindsym $mod+m exec $MUA
