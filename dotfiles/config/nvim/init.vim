@@ -107,3 +107,5 @@ let g:riv_fold_auto_update = 0
 
 " Pylint
 let g:ale_python_pylint_options = '--rcfile ~/.config/pylintrc'
+" flake8
+let g:ale_python_flake8_options = '--config ~/.config/flake8'
