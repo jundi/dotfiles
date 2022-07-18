@@ -288,7 +288,7 @@ exec rocketchat-desktop
 exec waybar
 exec gammastep-indicator
 exec nm-applet --indicator
-exec swayidle -w timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f -c 505050'
+exec swayidle -w timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 1800 'systemctl suspend -i' before-sleep 'swaylock -f -c 505050'
 exec sway-audio-idle-inhibit
 exec_always kanshi
 exec pa-notify -t 3
