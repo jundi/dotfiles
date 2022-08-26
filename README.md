@@ -5,7 +5,7 @@
 
 Install requirements
 ```
-aurget -S dotdrop pa-notify
+aurget -S dotdrop pa-notify sway-audio-idle-inhibit-git
 pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard kanshi dunst jq pulsemixer yapf
 ```
 
@@ -22,6 +22,7 @@ Manually install requirements that are not available from software repositories:
 
 - https://github.com/ikrivosheev/pa-notify
 - https://raw.githubusercontent.com/carnager/rofi-pass
+- https://github.com/ErikReider/SwayAudioIdleInhibit
 
 Install ALE compatible linters:
 ```
