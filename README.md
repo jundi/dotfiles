@@ -13,7 +13,7 @@ pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard ka
 
 Install requirements:
 ```
-apt-get install sway waybar rofi fonts-terminus xfonts-terminus kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl wl-clipboard python3-virtualenv
+apt-get install sway waybar rofi fonts-terminus xfonts-terminus kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl wl-clipboard python3-virtualenv slurp
 pip install --user dotdrop pulsemixer yapf
 apt-get install cargo
 cargo install alacritty
@@ -23,6 +23,7 @@ Manually install requirements that are not available from software repositories:
 - https://github.com/ikrivosheev/pa-notify
 - https://raw.githubusercontent.com/carnager/rofi-pass
 - https://github.com/ErikReider/SwayAudioIdleInhibit
+- https://github.com/swaywm/sway/blob/master/contrib/grimshot
 
 Install ALE compatible linters:
 ```
