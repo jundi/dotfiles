@@ -26,11 +26,10 @@ set splitright
 
 " Appearance
 syntax on
-let g:jellybeans_overrides = {
-\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+let g:onedark_color_overrides = {
+\ "background": {"gui": "none", "cterm": "none"}
 \}
-colorscheme jellybeans
-let g:airline_theme='dark'
+colorscheme onedark
 set nu
 set ls=2
 set showcmd
@@ -75,9 +74,6 @@ set wildignore+=*.pyc,*/build/lib/*,**/tmp/*,*.so,*.swp,*.zip,**/bower_component
 
 " vim-indent-guides: Enable indent quide on startup
 let g:indent_guides_enable_on_vim_startup = 1
-
-" vim-airline: Use powerline fonts
-let g:airline_powerline_fonts = 1
 
 " https://github.com/neovim/neovim/pull/7985
 autocmd VimResized * redraw!
