@@ -15,6 +15,7 @@ set nomore
 set modeline
 set modelines=5
 set hlsearch
+set nowrapscan
 set colorcolumn=+1
 set list
 set nojoinspaces
