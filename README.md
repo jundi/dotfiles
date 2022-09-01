@@ -6,7 +6,8 @@
 Install requirements
 ```
 aurget -S dotdrop pa-notify sway-audio-idle-inhibit-git
-pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard kanshi dunst jq pulsemixer yapf
+pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard kanshi dunst jq pulsemixer
+pip install black-macchiato
 ```
 
 ### Ubuntu
@@ -14,7 +15,7 @@ pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard ka
 Install requirements:
 ```
 apt-get install sway waybar rofi fonts-terminus xfonts-terminus kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl wl-clipboard python3-virtualenv slurp
-pip install --user dotdrop pulsemixer yapf
+pip install --user dotdrop pulsemixer black-macchiato
 apt-get install cargo
 cargo install alacritty
 ```

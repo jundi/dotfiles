@@ -36,4 +36,5 @@ Plug 'plasticboy/vim-markdown'
 Plug 'jimf/vim-pep8-text-width'
 Plug 'pignacio/vim-yapf-format'
 Plug 'gu-fan/riv.vim'
+Plug 'smbl64/vim-black-macchiato'
 call plug#end()

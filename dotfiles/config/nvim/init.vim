@@ -40,6 +40,7 @@ set lazyredraw
 
 " Key mapping
 let mapleader=","
+map <leader>i : ALEFix isort<cr>
 map ö gcc
 map Ö v: StripWhitespace<cr>
 map ä "+
