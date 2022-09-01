@@ -31,6 +31,7 @@ let g:onedark_color_overrides = {
 \ "background": {"gui": "none", "cterm": "none"}
 \}
 colorscheme onedark
+let g:lightline = {'colorscheme': 'one'}
 set nu
 set ls=2
 set showcmd
