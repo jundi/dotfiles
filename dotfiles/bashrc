@@ -68,7 +68,7 @@ export DOTDROP_PROFILE=default
 # alias
 alias ls='ls --color=auto --time-style="+%F %H:%M"'
 alias duh='du -h --max-depth=1 | sort -h'
-alias PluginInstall="vim +PluginClean +PluginInstall +qall"
+alias PlugInstall="vim +PlugClean +PlugInstall +qall"
 alias venv="bash --rcfile <(echo 'source ~/.bashrc; source ~/.opt/scripts/venv.sh')"
 alias whatismyip='curl https://api.ipify.org'
 alias wrap="tput rmam; fc -s;tput smam"
