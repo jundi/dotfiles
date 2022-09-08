@@ -104,6 +104,9 @@ dotfiles:
   f_paswitchsink.sh:
     src: opt/scripts/paswitchsink.sh
     dst: ~/.opt/scripts/paswitchsink.sh
+  f_paswitchprofile.sh:
+    src: opt/scripts/paswitchprofile.sh
+    dst: ~/.opt/scripts/paswitchprofile.sh
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -146,3 +149,4 @@ profiles:
     - f_venv.sh
     - f_showclipboard.sh
     - f_paswitchsink.sh
+    - f_paswitchprofile.sh
