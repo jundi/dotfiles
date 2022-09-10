@@ -6,7 +6,7 @@
 Install requirements
 ```
 aurget -S dotdrop pa-notify sway-audio-idle-inhibit-git
-pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard kanshi dunst jq pulsemixer
+pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard kanshi dunst jq pulsemixer wtype
 pip install black-macchiato
 ```
 
