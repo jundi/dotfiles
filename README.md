@@ -25,6 +25,8 @@ Manually install requirements that are not available from software repositories:
 - https://raw.githubusercontent.com/carnager/rofi-pass
 - https://github.com/ErikReider/SwayAudioIdleInhibit
 - https://github.com/swaywm/sway/blob/master/contrib/grimshot
+- https://github.com/swaywm/sway/blob/master/contrib/grimshot
+- https://github.com/atx/wtype
 
 Install ALE compatible linters:
 ```

@@ -69,7 +69,7 @@ input * {
         xkb_options "compose:rctrl-altgr"
 }
 # Keyboard layout modifications
-bindsym aring exec wtype /
+bindsym aring exec wtype "/"
 bindsym Shift+aring exec wtype "|"
 
 ### Key bindings
