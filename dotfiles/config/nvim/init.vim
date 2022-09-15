@@ -48,8 +48,9 @@ map Ä "0
 map C :w<cr>,ll
 cmap <S-Tab> <C-N>
 cmap <Esc><S-Tab> <C-P>
-map <C-l> :tabnext<cr>
-map <C-h> :tabprevious<cr>
+map <C-l> gt
+map <m-Tab> gt
+map <C-h> gT
 map <C-q> :quit!<cr>
 map <m-h> <C-W>h
 map <m-l> <C-W>l
@@ -71,6 +72,7 @@ function SwitchPylint()
     endif
 endfunction
 command SwitchPylint :call SwitchPylint()
+command Reload :source $MYVIMRC
 
 " Escape special characters in a string for exact matching.
 " This is useful to copying strings from the file to the search tool

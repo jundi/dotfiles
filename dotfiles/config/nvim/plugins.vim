@@ -22,7 +22,6 @@ Plug 'dense-analysis/ale'
 Plug 'pearofducks/ansible-vim'
 Plug 'Shougo/deoplete.nvim', {'tag': '6.0'}
 Plug 'deoplete-plugins/deoplete-jedi'
-Plug 'heavenshell/vim-pydocstring'
 Plug 'davidhalter/jedi-vim'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'ciaranm/securemodelines'
