@@ -107,13 +107,18 @@ dotfiles:
   f_paswitchprofile.sh:
     src: opt/scripts/paswitchprofile.sh
     dst: ~/.opt/scripts/paswitchprofile.sh
+  f_kanshi-current:
+    src: opt/bin/kanshi-current
+    dst: ~/.opt/bin/kanshi-current
+    chmod: '755'
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   vim-plug: nvim -u NORC '+source ~/.config/nvim/init.vim' +PlugUpdate +UpdateRemotePlugins
     +qall
-  vimpager: \[ -h ~/.opt/bin/vimpager \] || (mkdir -p ~/.opt/bin/ && ln -s ~/.config/nvim/plugged/vimpager/vimpager ~/.opt/bin/)
+  vimpager: \[ -h ~/.opt/bin/vimpager \] || (mkdir -p ~/.opt/bin/ && ln -s ~/.config/nvim/plugged/vimpager/vimpager
+    ~/.opt/bin/)
   vimbackup: mkdir -p ~/.vimbackup
 profiles:
   default:
@@ -150,3 +155,4 @@ profiles:
     - f_showclipboard.sh
     - f_paswitchsink.sh
     - f_paswitchprofile.sh
+    - f_kanshi-current
