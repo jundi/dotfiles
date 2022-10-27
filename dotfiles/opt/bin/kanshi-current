@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+"""Print current kanshi profile."""
+from i3ipc import Connection
+
+sway = Connection()
+
+
+def main():
+    """Print current kanshi profile."""
+    print("{")
+    for output in sway.get_outputs():
+
+        name = f'"{output.make} {output.model} {output.serial}"'
+        if output.active:
+            active = "enable"
+        else:
+            active = "disable"
+        position = f"{output.rect.x},{output.rect.y}"
+        scale = output.scale
+        transform = output.transform
+
+        print(f"\toutput {name} "
+              f"position {position} "
+              f"scale {scale} "
+              f"transform {transform} "
+              f"{active}")
+    print("}")
+
+
+main()
