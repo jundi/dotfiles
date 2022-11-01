@@ -1,3 +1,4 @@
+// vim: set ft=json sw=4 expandtab
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
@@ -5,7 +6,7 @@
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "cpu", "backlight", "battery", "clock", "tray"],
+    "modules-right": ["network", "pulseaudio", "cpu", "battery", "backlight", "idle_inhibitor", "clock", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -85,6 +86,19 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "network": {
+        "interval": 1,
+        "interface": "wlp2s0",
+        "format": "{ifname}",
+        "format-wifi": "{essid} ({signalStrength}% / {signaldBm}dBm) ↑{bandwidthUpBits:>} ↓{bandwidthDownBits:>} ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
     }
 }
 

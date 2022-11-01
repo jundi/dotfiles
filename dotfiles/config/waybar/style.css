@@ -60,8 +60,9 @@ window#waybar.hidden {
 #mode,
 #idle_inhibitor,
 #mpd {
+    background-color: #24323D;
     padding: 0 4px;
-    margin: 0 0px;
+    margin: 1px 2px;
     color: #ffffff;
 }
 
