@@ -271,6 +271,7 @@ bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +10
 bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -10
 bindsym XF86AudioMute exec pulsemixer --toggle-mute
 bindsym $mod+F1 exec sh ~/.opt/scripts/paswitchprofile.sh
+bindsym $mod+F5 exec sh ~/.opt/scripts/paswitchsink.sh
 bindsym $mod+F2 exec pulsemixer --toggle-mute
 bindsym $mod+F3 exec pulsemixer --change-volume -10
 bindsym $mod+F4 exec pulsemixer --change-volume +10

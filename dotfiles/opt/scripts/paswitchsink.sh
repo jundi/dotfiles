@@ -42,4 +42,4 @@ let linenum=$default_sink_ndx+1
 sinkname=$(pacmd list-sinks | grep device.description | head -n $linenum | tail -n 1 | cut -f 2 -d \" )
 
 # print sink name
-echo $sinkname | dzen2 -fn 'Bitstream Vera Sans-30:Bold' -p 2 -y 520
+echo $sinkname
