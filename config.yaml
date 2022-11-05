@@ -111,6 +111,9 @@ dotfiles:
     src: opt/bin/kanshi-current
     dst: ~/.opt/bin/kanshi-current
     chmod: '755'
+  f_man.vim:
+    src: config/nvim/ftplugin/man.vim
+    dst: ~/.config/nvim/ftplugin/man.vim
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -156,3 +159,4 @@ profiles:
     - f_paswitchsink.sh
     - f_paswitchprofile.sh
     - f_kanshi-current
+    - f_man.vim
