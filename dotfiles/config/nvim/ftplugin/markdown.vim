@@ -1,0 +1,1 @@
+map Ö :TableFormat<cr>

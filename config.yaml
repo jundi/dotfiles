@@ -117,6 +117,9 @@ dotfiles:
   f_git.vim:
     src: config/nvim/after/ftplugin/git.vim
     dst: ~/.config/nvim/after/ftplugin/git.vim
+  f_markdown.vim:
+    src: config/nvim/ftplugin/markdown.vim
+    dst: ~/.config/nvim/ftplugin/markdown.vim
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -164,3 +167,4 @@ profiles:
     - f_kanshi-current
     - f_man.vim
     - f_git.vim
+    - f_markdown.vim
