@@ -28,6 +28,11 @@
 }
 
 {
+	output eDP-1 position 0,0 scale 1.2 enable
+	output DP-6 position 1601,0 enable
+}
+
+{
 	output eDP-1 position 0,0 scale 1.2
 	output HDMI-A-1 position 1601,0
 }
