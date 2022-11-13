@@ -43,6 +43,7 @@
         "format":"{:%F W%V %T %z}"
     },
     "cpu": {
+        "interval": 1,
         "format": "{usage}% ",
         "tooltip": false
     },
