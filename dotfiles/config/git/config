@@ -18,7 +18,8 @@
 	st = status
 	sti = status --ignored
 	lp = log -p -n 5
-	lf = log --name-only
+	ln = log --name-only
+	dn = diff --name-only
 	df = diff
 	dc = diff --cached
 	tn = tag -n9
