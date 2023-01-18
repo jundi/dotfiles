@@ -286,7 +286,6 @@ bindsym Ctrl+Print  exec grimshot --notify save window
 
 # autostart
 exec dunst
-exec rocketchat-desktop
 exec waybar
 exec gammastep-indicator
 exec nm-applet --indicator
@@ -295,7 +294,6 @@ exec_always sway-audio-idle-inhibit
 exec_always kanshi
 exec pa-notify -t 3
 exec_always hdmi_sound_toggle.sh
-#exec cbatticon -i symbolic -l 5
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
