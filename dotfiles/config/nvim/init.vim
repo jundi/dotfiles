@@ -153,3 +153,6 @@ let g:ale_python_flake8_options = '--config ~/.config/flake8'
 
 " Python syntax f-string support
 let g:python_highlight_all = 1
+
+" Ale
+let g:ale_virtualtext_cursor = 1
