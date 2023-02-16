@@ -9,6 +9,9 @@
 }
 
 {
+	output eDP-1 enable
+}
+{
 	output LVDS-1 enable
 }
 
