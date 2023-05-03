@@ -1,4 +1,8 @@
 {
+	output "Samsung Electric Company SMS27A650 HVSB801230" position 0,0 scale 1.0 transform normal enable
+	output "Unknown 0x072F 0x00000000" position 0,0 disable
+}
+{
 	output LVDS-1 disable
 	output "Sony SONY TV 0x00000101" enable
 }
