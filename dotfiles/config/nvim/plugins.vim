@@ -37,4 +37,5 @@ Plug 'pignacio/vim-yapf-format'
 Plug 'gu-fan/riv.vim'
 Plug 'smbl64/vim-black-macchiato'
 Plug 'vim-python/python-syntax'
+Plug 'pangloss/vim-javascript'
 call plug#end()
