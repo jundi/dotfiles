@@ -1,7 +1,36 @@
 {
-	output "Samsung Electric Company SMS27A650 HVSB801230" position 0,0 scale 1.0 transform normal enable
-	output "Unknown 0x072F 0x00000000" position 0,0 disable
+	output eDP-1 enable
 }
+
+{
+	output LVDS-1 enable
+}
+
+{
+	output LVDS-1 enable
+	output HDMI-A-1 position 1366,0 enable
+}
+
+{
+	output eDP-1 position 0,0 scale 1.2 enable
+	output HDMI-A-1 position 1601,0 enable
+}
+
+{
+	output eDP-1 position 0,0 scale 1.2 enable
+	output DP-4 position 1601,0 enable
+}
+
+{
+	output eDP-1 position 0,0 scale 1.2 enable
+	output DP-5 position 1601,0 enable
+}
+
+{
+	output eDP-1 position 0,0 scale 1.2 enable
+	output DP-6 position 1601,0 enable
+}
+
 {
 	output LVDS-1 disable
 	output "Sony SONY TV 0x00000101" enable
@@ -13,39 +42,7 @@
 }
 
 {
-	output eDP-1 enable
-}
-{
-	output LVDS-1 enable
-}
-
-{
-	output LVDS-1 enable
-	output HDMI-A-1 position 1366,0
-}
-
-{
-	output eDP-1 position 0,0 scale 1.2
-	output DP-4 position 1601,0
-}
-
-{
-	output eDP-1 position 0,0 scale 1.2
-	output DP-5 position 1601,0
-}
-
-{
-	output eDP-1 position 0,0 scale 1.2 enable
-	output DP-6 position 1601,0 enable
-}
-
-{
-	output eDP-1 position 0,0 scale 1.2
-	output HDMI-A-1 position 1601,0
-}
-
-{
-	output "Samsung Electric Company LF24T450F HK2R900095" position 0,0 scale 1.0 transform normal enable
-	output "Samsung Electric Company SMS27A650 HVSB801230" position 1920,0 scale 1.0 transform normal enable
+	output "Samsung Electric Company LF24T450F HK2R900095" position 0,0 scale 1.0 transform 270 enable
+	output "Samsung Electric Company SMS27A650 HVSB801230" position 1080,0 scale 1.0 transform normal enable
 	output "Unknown 0x072F 0x00000000" position 0,0 disable
 }
