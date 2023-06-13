@@ -27,6 +27,7 @@ set splitright
 
 " Appearance
 syntax on
+set termguicolors
 let g:onedark_color_overrides = {
 \ "background": {"gui": "none", "cterm": "none"}
 \}
@@ -116,8 +117,11 @@ vmap <C-r> <Esc>:%s/<c-r>=GetVisual()<cr>/
 " Fuzzy search ignored files
 set wildignore+=*.pyc,*/build/lib/*,**/tmp/*,*.so,*.swp,*.zip,**/bower_components/*,**/node_modules/*
 
-" vim-indent-guides: Enable indent quide on startup
+" vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=none ctermbg=none
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey15 ctermbg=none
 
 " https://github.com/neovim/neovim/pull/7985
 autocmd VimResized * redraw!
