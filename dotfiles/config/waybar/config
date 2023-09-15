@@ -40,7 +40,7 @@
     "clock": {
         "interval": 1,
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format":"{:%F W%V %T %z}"
+        "format":"{:%F W%V %X %z}"
     },
     "cpu": {
         "interval": 1,
