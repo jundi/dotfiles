@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Command prompt colors
 str2int(){
  echo $1 | sha1sum | sed 's/[^0-9]*//g' | cut -c1-6 | xargs -I{} expr {} % $2 + 1
@@ -19,7 +18,7 @@ elif [[ -f /usr/share/LS_COLORS/dircolors.sh ]]; then
 fi
 
 # completion
-if [[ -t 1 ]]; then
+if [[ $- =~ "i" ]]; then
     bind '"\e[Z": menu-complete'             # shift-tab
     bind '"\e[1;2P": menu-complete-backward' # shift-F1
     bind 'set show-all-if-ambiguous on'
@@ -84,7 +83,7 @@ function rmlink() { rm -i "`readlink -f "$1"`"; }
 
 
 # keybindings
-if [[ -t 1 ]]; then
+if [[ $- =~ "i"  ]]; then
     bind '"\e,": "cd ..\n"' # alt-,
 fi
 
