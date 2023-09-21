@@ -159,4 +159,5 @@ let g:ale_python_flake8_options = '--config ~/.config/flake8'
 let g:python_highlight_all = 1
 
 " Ale
-let g:ale_virtualtext_cursor = 1
+let g:ale_virtualtext_cursor = 2
+let g:ale_echo_msg_format = '[%linter%] %code: %%s'
