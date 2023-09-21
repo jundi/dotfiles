@@ -32,7 +32,7 @@ if [[ -z "$VIRTUAL_ENV" ]]; then
 	case $answer in y|Y|yes|Yes)
 		echo "Creating new virtualenv in $PWD"
 		venv=$VENV_HOME/$PWD/__venv
-		virtualenv $venv --prompt "\[\033[44m\]$(basename $PWD)\[\033[00m\]"
+		python -m venv $venv --prompt "\[\033[44m\]$(basename $PWD)\[\033[00m\]"
 		source $venv/bin/activate
 		pip install $DEFAULT_PACKAGES --upgrade
 		;;
