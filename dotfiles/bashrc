@@ -54,6 +54,7 @@ if [[ $(command -v nvim) ]]; then
 fi
 if [[ $(command -v vimpager) ]]; then
     export PAGER="vimpager"
+    export MANPAGER="vimpager"
 fi
 if [[ $(command -v firefox) ]]; then
     export BROWSER=firefox
