@@ -2,7 +2,7 @@
 set -e
 
 VENV_HOME=~/.venv
-DEFAULT_PACKAGES="pip pytest pdbpp"
+DEFAULT_PACKAGES="pip pytest pdbpp setuptools_scm"
 
 original_pwd=$PWD
 
