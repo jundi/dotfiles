@@ -14,9 +14,11 @@ pip install black-macchiato
 
 Install requirements:
 ```
-apt-get install sway waybar rofi fonts-terminus xfonts-terminus kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl wl-clipboard python3-virtualenv slurp
-pip install --user dotdrop pulsemixer black-macchiato
-apt-get install cargo
+apt-get install sway waybar rofi fonts-terminus-otb kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype
+pip install --user dotdrop black-macchiato
+
+Install alacritty:
+apt-get install cargo cmake g++ pkg-config libfontconfig-dev
 cargo install alacritty
 ```
 Manually install requirements that are not available from software repositories:
@@ -24,9 +26,6 @@ Manually install requirements that are not available from software repositories:
 - https://github.com/ikrivosheev/pa-notify
 - https://raw.githubusercontent.com/carnager/rofi-pass
 - https://github.com/ErikReider/SwayAudioIdleInhibit
-- https://github.com/swaywm/sway/blob/master/contrib/grimshot
-- https://github.com/swaywm/sway/blob/master/contrib/grimshot
-- https://github.com/atx/wtype
 
 Install ALE compatible linters:
 ```
