@@ -279,7 +279,7 @@ bindsym $mod+Escape exec dunstctl close
 bindsym $mod+Shift+Escape exec dunstctl close-all
 # bindsym $mod+y exec wlay
 bindsym $mod+Shift+y exec wdisplays
-bindsym Print       exec grimshot --notify save active
+bindsym Print       exec grimshot --notify save screen
 bindsym Shift+Print exec grimshot --notify save area
 bindsym $alt+Print  exec grimshot --notify save output
 bindsym Ctrl+Print  exec grimshot --notify save window
