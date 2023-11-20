@@ -42,11 +42,7 @@
 }
 
 {
-	output "Samsung Electric Company LF24T450F HK2R900095" position 0,0 scale 1.0 transform 270 enable
+	output "Samsung Electric Company LF24T450F HK2R900095" position 0,0 scale 1.0 transform 90 enable
 	output "Samsung Electric Company SMS27A650 HVSB801230" position 1080,0 scale 1.0 transform normal enable
-	output "Unknown 0x072F 0x00000000" position 0,0 disable
-}
-{
-	output "Unknown 0x072F 0x00000000" position 0,0 scale 1.19921875 transform normal enable
-	output "Hewlett Packard HP ENVY 34c CN455011SC" position 1601,0 scale 1.0 transform normal enable
+	output eDP-1 position 0,0 disable
 }
