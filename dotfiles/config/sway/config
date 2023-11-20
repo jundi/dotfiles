@@ -286,7 +286,7 @@ bindsym Ctrl+Print  exec grimshot --notify save window
 
 # autostart
 exec dunst
-exec_always waybar
+exec waybar
 exec gammastep-indicator
 exec nm-applet --indicator
 exec_always swayidle -w timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 1800 'systemctl suspend -i' before-sleep 'swaylock -f -c 505050'
