@@ -14,7 +14,7 @@ pip install black-macchiato
 
 Install requirements:
 ```
-apt-get install sway waybar rofi fonts-terminus-otb kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype
+apt-get install sway waybar rofi fonts-terminus-otb kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype neovim
 pip install --user dotdrop black-macchiato
 
 Install alacritty:
