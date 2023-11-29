@@ -7,7 +7,7 @@ Install requirements
 ```
 aurget -S dotdrop pa-notify sway-audio-idle-inhibit-git
 pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard kanshi dunst jq pulsemixer wtype
-pip install black-macchiato
+pipx install black-macchiato
 ```
 
 ### Ubuntu
@@ -15,7 +15,8 @@ pip install black-macchiato
 Install requirements:
 ```
 apt-get install sway waybar rofi fonts-terminus-otb kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype neovim
-pip install --user dotdrop black-macchiato
+pipx install dotdrop
+pipx install black-macchiato
 
 Install alacritty:
 apt-get install cargo cmake g++ pkg-config libfontconfig-dev
@@ -30,10 +31,10 @@ Manually install requirements that are not available from software repositories:
 Install ALE compatible linters:
 ```
 apt-get install chktex lacheck eslint libxml2-utils
-pip install --user flake8 pylint pydocstyle yamllint ansible-lint rstcheck pylint_venv
+for p in flake8 pylint pydocstyle yamllint ansible-lint rstcheck pylint_venv; do pipx install $p;done
 ```
 Install deoplete compatible code completion:
 ```
-pip install --user jedi
+pipx install jedi
 npm install -g ternjs
 ```
