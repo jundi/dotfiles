@@ -5,9 +5,8 @@ if [[ -f /etc/profile ]]; then
     source /etc/profile
 fi
 
-# env variables
+# PATH
 export PATH=~/.opt/bin:~/.local/bin:$PATH
-export ROFI_PASS_BACKEND=wtype
 
 # local bash_profile
 if [[ -f ~/.bash_profile.local ]]; then
