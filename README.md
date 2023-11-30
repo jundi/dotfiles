@@ -31,7 +31,8 @@ Manually install requirements that are not available from software repositories:
 Install ALE compatible linters:
 ```
 apt-get install chktex lacheck eslint libxml2-utils
-for p in flake8 pylint pydocstyle yamllint ansible-lint rstcheck pylint_venv; do pipx install $p;done
+for p in flake8 pylint pydocstyle yamllint ansible-lint rstcheck; do pipx install $p;done
+pipx inject pylint pylint_venv
 ```
 Install deoplete compatible code completion:
 ```
