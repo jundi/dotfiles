@@ -14,7 +14,7 @@ pipx install black-macchiato
 
 Install requirements:
 ```
-apt-get install sway waybar rofi fonts-terminus-otb kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype neovim
+apt-get install sway waybar rofi fonts-terminus-otb kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype neovim python3-jedi
 pipx install dotdrop
 pipx install black-macchiato
 
@@ -35,6 +35,5 @@ for p in flake8 pylint pydocstyle yamllint ansible-lint rstcheck pylint_venv; do
 ```
 Install deoplete compatible code completion:
 ```
-pipx install jedi
 npm install -g ternjs
 ```
