@@ -3,10 +3,14 @@
 ## Installation
 ### Arch linux
 
+Install aura:
+```
+https://github.com/fosskers/aura
+```
 Install requirements
 ```
-aurget -S dotdrop pa-notify sway-audio-idle-inhibit-git
-pacman -S alacritty sway waybar otf-font-awesome ttf-roboto rofi wl-clipboard kanshi dunst jq pulsemixer wtype
+aura -A dotdrop pa-notify sway-audio-idle-inhibit-git wdisplays grimshot
+pacman -S alacritty sway waybar ttf-font-awesome ttf-roboto rofi-pass wl-clipboard kanshi dunst jq pulsemixer wtype terminus-font inetutils bash-completion libnotify network-manager-applet gammastep swaylock swayidle xorg-xwayland
 pipx install black-macchiato
 ```
 
@@ -23,7 +27,6 @@ apt-get install cargo cmake g++ pkg-config libfontconfig-dev
 cargo install alacritty
 ```
 Manually install requirements that are not available from software repositories:
-
 - https://github.com/ikrivosheev/pa-notify
 - https://raw.githubusercontent.com/carnager/rofi-pass
 - https://github.com/ErikReider/SwayAudioIdleInhibit
