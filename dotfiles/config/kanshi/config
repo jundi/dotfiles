@@ -1,4 +1,8 @@
 {
+	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1.1015625 transform normal enable
+}
+
+{
 	output eDP-1 enable
 }
 
