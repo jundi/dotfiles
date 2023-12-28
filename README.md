@@ -18,7 +18,7 @@ pipx install black-macchiato
 
 Install requirements:
 ```
-apt-get install sway waybar rofi fonts-terminus-otb kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype neovim python3-jedi
+apt-get install sway waybar rofi fonts-terminus-otb kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype neovim python3-jedi python3-i3ipc
 pipx install dotdrop
 pipx install black-macchiato
 
