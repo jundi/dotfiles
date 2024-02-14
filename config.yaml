@@ -124,6 +124,9 @@ dotfiles:
     src: opt/scripts/jabra-hsp-profile.sh
     dst: ~/.opt/scripts/jabra-hsp-profile.sh
     chmod: '777'
+  f_pydocstyle:
+    src: pydocstyle
+    dst: ~/.pydocstyle
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -173,3 +176,4 @@ profiles:
     - f_git.vim
     - f_markdown.vim
     - f_jabra-hsp-profile.sh
+    - f_pydocstyle
