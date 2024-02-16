@@ -21,8 +21,8 @@ def main():
 
         print(f"\toutput {name} "
               f"position {position} "
-              f"scale {scale} "
-              f"transform {transform} "
+              f"scale {scale or 1} "
+              f"transform {transform or 'normal'} "
               f"{active}")
     print("}")
 
