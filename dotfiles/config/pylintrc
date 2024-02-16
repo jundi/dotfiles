@@ -4,3 +4,6 @@ init-hook=
     except ImportError: pass
     else: pylint_venv.inithook(force_venv_activation=True)
 extension-pkg-whitelist=lxml.etree
+[TYPECHECK]
+# generated-members=(User|FileEntry|TaskEntry|Token|UploadEntry|ProjectEntry).(objects|DoesNotExist)
+generated-members=objects,DoesNotExist
