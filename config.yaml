@@ -15,9 +15,6 @@ dotfiles:
   f_style.css:
     src: config/waybar/style.css
     dst: ~/.config/waybar/style.css
-  f_alacritty.yml:
-    src: config/alacritty.yml
-    dst: ~/.config/alacritty.yml
   f_ansible.cfg:
     src: ansible.cfg
     dst: ~/.ansible.cfg
@@ -127,6 +124,9 @@ dotfiles:
   f_pydocstyle:
     src: pydocstyle
     dst: ~/.pydocstyle
+  f_alacritty.toml:
+    src: config/alacritty.toml
+    dst: ~/.config/alacritty.toml
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -143,7 +143,6 @@ profiles:
     - f_bash_profile
     - f_config
     - f_style.css
-    - f_alacritty.yml
     - f_ansible.cfg
     - f_flake8
     - f_config.ini
@@ -177,3 +176,4 @@ profiles:
     - f_markdown.vim
     - f_jabra-hsp-profile.sh
     - f_pydocstyle
+    - f_alacritty.toml
