@@ -127,6 +127,9 @@ dotfiles:
   f_alacritty.toml:
     src: config/alacritty.toml
     dst: ~/.config/alacritty.toml
+  f_mpv.conf:
+    src: config/mpv/mpv.conf
+    dst: ~/.config/mpv/mpv.conf
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -177,3 +180,4 @@ profiles:
     - f_jabra-hsp-profile.sh
     - f_pydocstyle
     - f_alacritty.toml
+    - f_mpv.conf
