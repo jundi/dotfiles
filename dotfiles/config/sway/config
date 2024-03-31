@@ -290,6 +290,7 @@ exec dunst
 exec waybar
 exec gammastep-indicator
 exec nm-applet --indicator
+exec blueman-tray
 exec_always swayidle -w timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 1800 'systemctl suspend -i' before-sleep 'swaylock -f -c 505050'
 exec_always sway-audio-idle-inhibit
 exec_always kanshi
