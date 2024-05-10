@@ -128,6 +128,7 @@ autocmd VimResized * redraw!
 
 " completion
 let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
 let g:deoplete#enable_at_startup = 1
 set completeopt-=preview
 " smarter filename completion
