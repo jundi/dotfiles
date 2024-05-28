@@ -75,6 +75,7 @@ alias wrap="tput rmam; fc -s;tput smam"
 alias vam='ansible-vault edit'
 alias ms='md5sum'
 alias grep='grep -I --color=auto'
+alias cdp='cd $PWD'
 
 
 # functions
