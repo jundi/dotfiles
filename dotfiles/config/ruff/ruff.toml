@@ -1,0 +1,4 @@
+line-length = 80
+[lint]
+select = ["ALL"]
+ignore = ["COM812", "ANN", "Q000", "D102", "EM101", "PLR2004"]

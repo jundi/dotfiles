@@ -133,6 +133,9 @@ dotfiles:
   f_set-time.sh:
     src: opt/scripts/set-time.sh
     dst: ~/.opt/scripts/set-time.sh
+  f_ruff.toml:
+    src: config/ruff/ruff.toml
+    dst: ~/.config/ruff/ruff.toml
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -185,3 +188,4 @@ profiles:
     - f_alacritty.toml
     - f_mpv.conf
     - f_set-time.sh
+    - f_ruff.toml
