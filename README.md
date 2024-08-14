@@ -9,8 +9,8 @@ https://github.com/fosskers/aura
 ```
 Install requirements
 ```
-aura -A dotdrop pa-notify sway-audio-idle-inhibit-git wdisplays grimshot
-pacman -S alacritty sway waybar ttf-font-awesome ttf-roboto rofi-pass wl-clipboard kanshi dunst jq pulsemixer wtype terminus-font inetutils bash-completion libnotify network-manager-applet gammastep swaylock swayidle xorg-xwayland swaybg
+aura -A dotdrop pa-notify sway-audio-idle-inhibit-git wdisplays grimshot terminus-font-ttf
+pacman -S alacritty sway waybar ttf-font-awesome ttf-roboto rofi-pass wl-clipboard kanshi dunst jq pulsemixer wtype inetutils bash-completion libnotify network-manager-applet gammastep swaylock swayidle xorg-xwayland swaybg
 pipx install black-macchiato
 ```
 
@@ -18,7 +18,7 @@ pipx install black-macchiato
 
 Install requirements:
 ```
-apt-get install sway waybar rofi fonts-terminus-otb kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype neovim python3-jedi python3-i3ipc
+apt-get install sway waybar rofi fonts-terminus-ttf kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype neovim python3-jedi python3-i3ipc
 pipx install dotdrop
 pipx install black-macchiato
 
