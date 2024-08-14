@@ -90,7 +90,7 @@
     },
     "network": {
         "interval": 1,
-        "interface": "wlp2s0",
+        // "interface": "wlan0",
         "format": "{ifname}",
         "format-wifi": "{essid} ({signalStrength}% / {signaldBm}dBm) ↑{bandwidthUpBits:>} ↓{bandwidthDownBits:>} ",
         "format-ethernet": "{ipaddr}/{cidr} ",
