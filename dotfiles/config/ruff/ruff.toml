@@ -1,4 +1,10 @@
-line-length = 80
 [lint]
 select = ["ALL"]
-ignore = ["COM812", "ANN", "Q000", "D102", "EM101", "PLR2004"]
+ignore = ["COM812", "ANN", "Q000", "D102", "EM101", "PLR2004", "S101"]
+preview = true
+explicit-preview-rules = true
+extend-select = ["E302"]
+
+[lint.pycodestyle]
+max-line-length = 79
+max-doc-length = 72
