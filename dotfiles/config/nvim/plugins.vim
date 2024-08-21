@@ -38,4 +38,5 @@ Plug 'gu-fan/riv.vim'
 Plug 'smbl64/vim-black-macchiato'
 Plug 'vim-python/python-syntax'
 Plug 'pangloss/vim-javascript'
+Plug 'fisadev/vim-isort'
 call plug#end()
