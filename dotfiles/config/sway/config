@@ -294,7 +294,7 @@ exec blueman-applet
 exec_always swayidle -w timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 1800 'systemctl suspend -i' before-sleep 'swaylock -f -c 505050'
 exec_always sway-audio-idle-inhibit
 exec_always kanshi
-exec_always pa-notify -t 3
+exec_always pasystray -a
 exec_always hdmi_sound_toggle.sh
 
 include /etc/sway/config.d/*
