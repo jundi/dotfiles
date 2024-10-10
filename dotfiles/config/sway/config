@@ -278,7 +278,7 @@ bindsym $mod+F3 exec pulsemixer --change-volume -10
 bindsym $mod+F4 exec pulsemixer --change-volume +10
 bindsym $mod+Escape exec dunstctl close
 bindsym $mod+Shift+Escape exec dunstctl close-all
-# bindsym $mod+y exec wlay
+bindsym $mod+y exec "killall kanshi && kanshi"
 bindsym $mod+Shift+y exec wdisplays
 bindsym Print       exec grimshot --notify save screen
 bindsym Ctrl+Print exec grimshot --notify save area

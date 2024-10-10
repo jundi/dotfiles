@@ -65,3 +65,6 @@
 	output "Samsung Electric Company SMS27A650 HVSB801230" position 1080,0 scale 1.0 transform normal enable
 	output eDP-1 position 0,0 disable
 }
+{
+	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1.1015625 transform normal enable
+}
