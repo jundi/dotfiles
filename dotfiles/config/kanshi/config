@@ -68,3 +68,8 @@
 {
 	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1.1015625 transform normal enable
 }
+{
+	output "Dell Inc. DELL P2419H 145L6X2" position 1742,0 scale 1.0 transform normal enable
+	output "Dell Inc. DELL P2419H GZ4L6X2" position 3662,0 scale 1.0 transform normal enable
+	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1 transform normal disable
+}
