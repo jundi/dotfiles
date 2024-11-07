@@ -1,25 +1,11 @@
 #!/bin/bash
 set -e
 
-profiles=(`pactl list cards | awk '{print $ 1}' | grep 'output:.*stereo+input' | cut -d : -f 1-3`)
-last_profile=${profiles[-1]}
-
-active_profile=`pactl list cards | grep "Active Profile" | awk '{print $3}'`
-if [[ ! "${profiles[*]}" =~ "$active_profile" ]]; then
-	# active profile is not on the list
-	active_profile=$last_profile
+if [[ -n `pactl get-default-sink | grep "analog-stereo"` ]]; then
+	profile="hdmi-stereo"
+else
+	profile="analog-stereo"
 fi
 
-for profile in ${profiles[@]}; do
-	if [[ $active_profile == $last_profile ]]; then
-		# Last profile was the active profile. This profile is next one
-		# on the list
-		pactl set-card-profile 0 $profile
-		notify-send --app-name `basename $0` -t 3000 "Profile changed to $profile" -r 982743
-		exit 0
-	fi
-	last_profile=$profile
-done
-
-notify-send --app-name `basename $0` -t 3000 "Error: profile not changed" -r 982743
-exit 1
+notify-send --app-name `basename $0` -r 18765 -t 3000 $profile
+pactl set-card-profile 0 output:$profile
