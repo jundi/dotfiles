@@ -9,8 +9,8 @@ https://github.com/fosskers/aura
 ```
 Install requirements
 ```
-aura -A dotdrop sway-audio-idle-inhibit-git wdisplays grimshot terminus-font-ttf
-pacman -S alacritty sway waybar ttf-font-awesome ttf-roboto rofi-pass wl-clipboard kanshi dunst jq pulsemixer wtype inetutils bash-completion libnotify network-manager-applet gammastep swaylock swayidle xorg-xwayland swaybg pasystray
+aura -A dotdrop sway-audio-idle-inhibit-git wdisplays grimshot terminus-font-ttf pasystray-wayland
+pacman -S alacritty sway waybar ttf-font-awesome ttf-roboto rofi-pass wl-clipboard kanshi dunst jq pulsemixer wtype inetutils bash-completion libnotify network-manager-applet gammastep swaylock swayidle xorg-xwayland swaybg
 pipx install black-macchiato
 ```
 
