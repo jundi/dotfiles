@@ -1,74 +1,74 @@
-{
+profile {
 	output "Dell Inc. DELL U2719D 9RNGKS2" position 0,0 scale 1.0 transform normal enable
 	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1 transform normal disable
 }
-{
+profile {
 	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1.1015625 transform normal enable
 }
-{
+profile {
 	output eDP-1 enable
 }
 
-{
+profile {
 	output LVDS-1 enable
 }
 
-{
+profile {
 	output LVDS-1 enable
 	output HDMI-A-1 position 1366,0 enable
 }
 
-{
+profile {
 	output eDP-1 position 0,0 scale 1.2 enable
 	output HDMI-A-1 position 1601,0 enable
 }
 
-{
+profile {
 	output eDP-1 position 0,0 scale 1.2 enable
 	output DP-4 position 1601,0 enable
 }
 
-{
+profile {
 	output eDP-1 position 0,0 scale 1.2 enable
 	output DP-5 position 1601,0 enable
 }
 
-{
+profile {
 	output eDP-1 position 0,0 scale 1.2 enable
 	output DP-6 position 1601,0 enable
 }
 
-{
+profile {
 	output LVDS-1 disable
 	output "Sony SONY TV 0x00000101" enable
 }
 
-{
+profile {
 	output LVDS-1 disable
 	output "Electric Company SAMSUNG 0x00000000" enable
 }
 
-{
+profile {
 	output "Samsung Electric Company LF24T450F HK2R900095" position 0,0 scale 1.0 transform normal enable
 	output "Samsung Electric Company SMS27A650 HVSB801230" position 1920,0 scale 1.0 transform normal enable
 	output eDP-1 position 0,0 disable
 }
 
-{
+profile {
 	output "Samsung Electric Company LF24T450F HK2R900095" position 1080,0 scale 1.0 transform normal enable
 	output "Samsung Electric Company SMS27A650 HVSB801230" position 0,0 scale 1.0 transform 90 enable
 	output eDP-1 position 0,0 scale 1 transform normal disable
 }
 
-{
+profile {
 	output "Samsung Electric Company LF24T450F HK2R900095" position 0,0 scale 1.0 transform 90 enable
 	output "Samsung Electric Company SMS27A650 HVSB801230" position 1080,0 scale 1.0 transform normal enable
 	output eDP-1 position 0,0 disable
 }
-{
+profile {
 	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1.1015625 transform normal enable
 }
-{
+profile {
 	output "Dell Inc. DELL P2419H 145L6X2" position 1742,0 scale 1.0 transform normal enable
 	output "Dell Inc. DELL P2419H GZ4L6X2" position 3662,0 scale 1.0 transform normal enable
 	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1 transform normal disable

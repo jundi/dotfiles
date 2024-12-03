@@ -7,7 +7,7 @@ sway = Connection()
 
 def main():
     """Print current kanshi profile."""
-    print("{")
+    print("profile {")
     for output in sway.get_outputs():
 
         name = f'"{output.make} {output.model} {output.serial}"'
