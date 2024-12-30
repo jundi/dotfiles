@@ -140,6 +140,9 @@ dotfiles:
     src: config/git/hooks/prepare-commit-msg
     dst: ~/.config/git/hooks/prepare-commit-msg
     chmod: '755'
+  f_dpres-build.sh:
+    src: opt/scripts/dpres-build.sh
+    dst: ~/.opt/scripts/dpres-build.sh
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -194,3 +197,4 @@ profiles:
     - f_set-time.sh
     - f_ruff.toml
     - f_prepare-commit-msg
+    - f_dpres-build.sh
