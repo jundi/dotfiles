@@ -1,8 +1,17 @@
+profile c5 {
+	output "Dell Inc. DELL P2419H FNSH6X2" position 0,0 scale 1.0 transform normal enable
+	output "Dell Inc. DELL P2419H 875L6X2" position 1920,0 scale 1.0 transform normal enable
+	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1 transform normal disable
+}
+profile c2 {
+	output "Dell Inc. DELL U2722D 8H2LP83" position 0,0 scale 1.0 transform normal enable
+	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1 transform normal disable
+}
 profile {
 	output "Dell Inc. DELL U2719D 9RNGKS2" position 0,0 scale 1.0 transform normal enable
 	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1 transform normal disable
 }
-profile {
+profile hp {
 	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1.1015625 transform normal enable
 }
 profile {
