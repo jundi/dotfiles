@@ -162,3 +162,6 @@ let g:python_highlight_all = 1
 " Ale
 let g:ale_virtualtext_cursor = 2
 let g:ale_echo_msg_format = '[%linter%] %code: %%s'
+
+" Isort
+let g:vim_isort_config_overrides = {'include_trailing_comma': 1, 'multi_line_output': 3}
