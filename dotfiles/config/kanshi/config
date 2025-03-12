@@ -1,3 +1,7 @@
+profile {
+	output "Dell Inc. DELL U3419W 7WQT5T2" position 0,0 scale 1.0 transform normal enable
+	output "Unknown 0x8C79 0x00000004" position 0,0 scale 1 transform normal disable
+}
 profile c5 {
 	output "Dell Inc. DELL P2419H FNSH6X2" position 0,0 scale 1.0 transform normal enable
 	output "Dell Inc. DELL P2419H 875L6X2" position 1920,0 scale 1.0 transform normal enable
