@@ -41,3 +41,7 @@ Install deoplete compatible code completion:
 ```
 npm install -g ternjs
 ```
+Install lscolors
+```
+wget https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/LS_COLORS -O ~/.dircolors
+```
