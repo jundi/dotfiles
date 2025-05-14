@@ -24,3 +24,4 @@
 	dc = diff --cached
 	tn = tag -n9
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+	recommit = commit --reuse-message=ORIG_HEAD
