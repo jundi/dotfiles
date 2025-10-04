@@ -62,6 +62,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # Read `man 5 sway-input` for more information about this section.
 input type:touchpad {
         pointer_accel 0.5
+        click_method button_areas
+        middle_emulation disabled
+        natural_scroll disabled
 }
 
 input * {
@@ -291,10 +294,10 @@ exec waybar
 exec gammastep-indicator
 exec nm-applet --indicator
 exec blueman-applet
+exec pasystray -a
 exec_always swayidle -w timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 1800 'systemctl suspend -i' before-sleep 'swaylock -f -c 505050'
-exec_always sway-audio-idle-inhibit
+exec sway-audio-idle-inhibit
 exec_always kanshi
-exec_always pasystray -a
 exec_always hdmi_sound_toggle.sh
 
 include /etc/sway/config.d/*
