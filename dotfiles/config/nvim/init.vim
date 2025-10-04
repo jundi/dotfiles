@@ -74,6 +74,7 @@ function SwitchPylint()
 endfunction
 command SwitchPylint :call SwitchPylint()
 command Reload :source $MYVIMRC
+command! -nargs=1 -complete=help H execute 'help' <q-args> | only
 
 " Escape special characters in a string for exact matching.
 " This is useful to copying strings from the file to the search tool
