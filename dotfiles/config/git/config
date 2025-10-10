@@ -25,3 +25,13 @@
 	tn = tag -n9
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 	recommit = commit --reuse-message=ORIG_HEAD
+        forcepull = "!f() { \
+            branch=$(git rev-parse --abbrev-ref HEAD); \
+            read -p \"⚠️  This will discard ALL local changes and reset to origin/$branch. Continue? [y/N] \" ans; \
+            if [ \"$ans\" = \"y\" ] || [ \"$ans\" = \"Y\" ]; then \
+                git fetch origin && git reset --hard origin/$branch; \
+            else \
+                echo \"❌ Cancelled.\"; \
+            fi; \
+        }; f"
+
