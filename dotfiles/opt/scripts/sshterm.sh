@@ -2,8 +2,9 @@
 
 title=$(swaymsg -t get_tree | jq  '..|try select(.focused == true)|.name' | cut -d "\"" -f 2)
 server=$(echo $title | cut -d @ -f 2 | cut -d : -f 1)
-path=$(echo $title | cut -d : -f 2)
 user=$(echo $title | cut -d @ -f 1)
+longpath=$(echo $title | cut -d : -f 2)
+path=`echo $longpath | sed "s/\/home\/$user/~/"`
 
 # override 'server' if argument is provided
 if [[ $# -gt 0 ]]; then
