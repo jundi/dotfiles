@@ -18,13 +18,9 @@ pipx install black-macchiato
 
 Install requirements:
 ```
-apt-get install sway waybar rofi fonts-terminus-ttf kanshi wdisplays pass swayidle swaylock dunst jq fonts-font-awesome fonts-roboto brightnessctl python grimshot pulsemixer gammastep wtype neovim python3-jedi python3-i3ipc isort pasystray
-pipx install dotdrop
+apt-get install sway waybar rofi alacritty dotdrop neovim fonts-terminus kanshi swaylock dunst jq wdisplays grimshot wtype isort pasystray swayidle pulsemixer gammastep brightnessctl fonts-font-awesome fonts-roboto firefox python3-jedi python3-i3ipc pass ranger
 pipx install black-macchiato
 
-Install alacritty:
-apt-get install cargo cmake g++ pkg-config libfontconfig-dev
-cargo install alacritty
 ```
 Manually install requirements that are not available from software repositories:
 - https://github.com/ikrivosheev/pa-notify
@@ -33,9 +29,8 @@ Manually install requirements that are not available from software repositories:
 
 Install ALE compatible linters:
 ```
-apt-get install chktex lacheck eslint libxml2-utils
-for p in flake8 pylint pydocstyle yamllint ansible-lint rstcheck; do pipx install $p;done
-pipx inject pylint pylint_venv
+apt-get install chktex lacheck eslint libxml2-utils ansible-lint yamllint
+pipx install rstcheck
 ```
 Install deoplete compatible code completion:
 ```
