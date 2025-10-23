@@ -24,7 +24,17 @@
 	dc = diff --cached
 	tn = tag -n9
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
-	recommit = commit --reuse-message=ORIG_HEAD
+	recommit = "!f() { \
+	  MSG_FILE=\"$(git rev-parse --git-dir)/COMMIT_EDITMSG\"; \
+	  if [ ! -f \"$MSG_FILE\" ]; then \
+	    echo \"No previous commit message found at $MSG_FILE\"; \
+	    exit 1; \
+	  fi; \
+	  CLEAN_MSG=\"$(mktemp)\"; \
+	  grep -v '^[#;]' \"$MSG_FILE\" | sed '/^[[:space:]]*$/d' > \"$CLEAN_MSG\"; \
+	  git commit -a -F \"$CLEAN_MSG\"; \
+	  rm -f \"$CLEAN_MSG\"; \
+	}; f"
         forcepull = "!f() { \
             branch=$(git rev-parse --abbrev-ref HEAD); \
             read -p \"⚠️  This will discard ALL local changes and reset to origin/$branch. Continue? [y/N] \" ans; \
