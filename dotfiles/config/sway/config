@@ -287,6 +287,7 @@ bindsym Print       exec grimshot --notify save screen
 bindsym Ctrl+Print exec grimshot --notify save area
 bindsym $alt+Print  exec grimshot --notify save output
 bindsym Shift+Print  exec grimshot --notify save window
+bindsym Shift+Insert exec bash -c 'primary="$(wl-paste --primary 2>/dev/null)" && [ -n "$primary" ] && wtype "$primary"'
 
 # autostart
 exec dunst
