@@ -1,3 +1,9 @@
+# Create RPM package from a dPres repository.
+#
+# Requires these package to be installed:
+# * gitlab-ci-pipeline
+# * rpmdevtools
+
 create-archive.sh
 preprocess-spec-m4-macros.sh include/rhel9
 
