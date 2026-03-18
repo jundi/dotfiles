@@ -147,6 +147,9 @@ dotfiles:
     src: config/user-dirs.dirs
     dst: ~/.config/user-dirs.dirs
     chmod: '600'
+  f_dunstrc:
+    src: config/dunst/dunstrc
+    dst: ~/.config/dunst/dunstrc
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -203,3 +206,4 @@ profiles:
     - f_prepare-commit-msg
     - f_dpres-build.sh
     - f_user-dirs.dirs
+    - f_dunstrc
