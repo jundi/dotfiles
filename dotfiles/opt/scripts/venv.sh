@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DEFAULT_PACKAGES="pip pytest pdbpp setuptools_scm"
+DEFAULT_PACKAGES="pytest pdbpp"
 
 original_pwd=$PWD
 
@@ -31,9 +31,9 @@ if [[ -z "$VIRTUAL_ENV" ]]; then
 	case $answer in y|Y|yes|Yes)
 		echo "Creating new virtualenv in $PWD"
 		venv=$PWD/.venv
-		python -m venv $venv --prompt "\[\033[44m\]$(basename $PWD)\[\033[00m\]"
+		uv venv $venv --prompt "\[\033[44m\]$(basename $PWD)\[\033[00m\]"
 		source $venv/bin/activate
-		pip install $DEFAULT_PACKAGES --upgrade
+		uv pip install $DEFAULT_PACKAGES
 		;;
 
 		*)

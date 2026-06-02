@@ -77,6 +77,7 @@ alias grep='grep -I --color=auto'
 alias cdp='cd $PWD'
 alias file-scraper='scraper scrape-file'
 alias bluuth='rfkill unblock bluetooth'
+alias pip='uv pip'
 
 
 # functions
