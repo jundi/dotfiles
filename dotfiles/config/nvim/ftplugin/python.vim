@@ -8,4 +8,4 @@ set fo-=t
 
 map Ö v: BlackMacchiato<cr>
 
-let b:ale_linters = ['ruff']
+let b:ale_linters = ['ruff', 'mypy', 'flake8']
