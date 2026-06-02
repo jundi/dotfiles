@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-VENV_HOME=~/.venv
 DEFAULT_PACKAGES="pip pytest pdbpp setuptools_scm"
 
 original_pwd=$PWD
@@ -9,7 +8,7 @@ original_pwd=$PWD
 # Activate existing virtual environment
 while [[ $PWD != "/" ]]; do
 
-	venv=$VENV_HOME/$PWD/__venv
+	venv=$PWD/.venv
 
 	if [[ -d $venv ]]; then
 		echo "Found virtualenv in $PWD"
@@ -31,7 +30,7 @@ if [[ -z "$VIRTUAL_ENV" ]]; then
 
 	case $answer in y|Y|yes|Yes)
 		echo "Creating new virtualenv in $PWD"
-		venv=$VENV_HOME/$PWD/__venv
+		venv=$PWD/.venv
 		python -m venv $venv --prompt "\[\033[44m\]$(basename $PWD)\[\033[00m\]"
 		source $venv/bin/activate
 		pip install $DEFAULT_PACKAGES --upgrade
