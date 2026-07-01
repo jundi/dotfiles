@@ -2,8 +2,7 @@
 size = 11.0
 
 [font.normal]
-family = "Cousine"
-style = "Regular"
+family = "Hack"
 
 [hints]
 alphabet = "jfkdlsahgurieowpq"
