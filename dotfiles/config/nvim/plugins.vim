@@ -39,5 +39,5 @@ Plug 'smbl64/vim-black-macchiato'
 Plug 'vim-python/python-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'fisadev/vim-isort'
-Plug 'airblade/vim-gitgutter'
+Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
