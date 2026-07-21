@@ -6,7 +6,8 @@
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
-    "modules-right": ["network", "pulseaudio", "cpu", "battery", "backlight", "idle_inhibitor", "clock", "tray"],
+    "modules-center": ["network"],
+    "modules-right": ["pulseaudio", "cpu", "battery", "backlight", "idle_inhibitor", "clock", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -89,17 +90,18 @@
         "on-click": "pavucontrol"
     },
     "network": {
-        "interval": 1,
+        "interval": 4,
         // "interface": "wlan0",
         "format": "{ifname}",
         "format-wifi": "{essid} ({signalStrength}% / {signaldBm}dBm) ↑{bandwidthUpBits:>} ↓{bandwidthDownBits:>} ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-ethernet": "{ipaddr}/{cidr} ↑{bandwidthUpBits:>} ↓{bandwidthDownBits:>} ",
         "format-disconnected": "", //An empty format will hide the module.
         "tooltip-format": "{ifname} via {gwaddr} ",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} ",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
+        "max-length": 200,
+        "mix-length": 200
     }
 }
 
