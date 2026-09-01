@@ -8,7 +8,7 @@ original_pwd=$PWD
 # Activate existing virtual environment
 while [[ $PWD != "/" ]]; do
 
-	venv=$PWD/.venv
+	venv=$PWD/.venv-$(hostname -s)
 
 	if [[ -d $venv ]]; then
 		echo "Found virtualenv in $PWD"
@@ -30,7 +30,7 @@ if [[ -z "$VIRTUAL_ENV" ]]; then
 
 	case $answer in y|Y|yes|Yes)
 		echo "Creating new virtualenv in $PWD"
-		venv=$PWD/.venv
+		venv=$PWD/.venv-$(hostname -s)
 		uv venv $venv --prompt "\[\033[44m\]$(basename $PWD)\[\033[00m\]"
 		source $venv/bin/activate
 		uv pip install $DEFAULT_PACKAGES
