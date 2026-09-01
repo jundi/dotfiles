@@ -25,8 +25,13 @@ cd $original_pwd
 if [[ -z "$VIRTUAL_ENV" ]]; then
 
 
-	read -p "Create new virtualenv for $PWD? [Y/n]: " answer
-	answer=${answer:-Y}
+	if [[ -t 0 ]]; then
+		read -p "Create new virtualenv for $PWD? [Y/n]: " answer
+		answer=${answer:-Y}
+	else
+		echo "Non-interactive shell detected, creating virtualenv without prompting"
+		answer=Y
+	fi
 
 	case $answer in y|Y|yes|Yes)
 		echo "Creating new virtualenv in $PWD"
