@@ -12,6 +12,8 @@
 [merge]
 	ff = only
 	tool = vimdiff
+[init]
+	defaultBranch = master
 [alias]
 	co = checkout
 	br = branch -a -vv
