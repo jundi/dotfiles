@@ -10,7 +10,7 @@ https://github.com/fosskers/aura
 Install requirements
 ```
 aura -A dotdrop sway-audio-idle-inhibit-git wdisplays grimshot terminus-font-ttf pasystray-wayland
-pacman -S alacritty sway waybar ttf-font-awesome ttf-roboto rofi-pass wl-clipboard kanshi dunst jq pulsemixer wtype inetutils bash-completion libnotify network-manager-applet gammastep swaylock swayidle xorg-xwayland swaybg
+pacman -S alacritty sway waybar ttf-font-awesome ttf-roboto rofi-pass wl-clipboard dunst jq pulsemixer wtype inetutils bash-completion libnotify network-manager-applet gammastep swaylock swayidle xorg-xwayland swaybg
 pipx install black-macchiato
 ```
 
@@ -18,7 +18,7 @@ pipx install black-macchiato
 
 Install requirements:
 ```
-apt-get install sway waybar rofi alacritty dotdrop neovim kanshi swaylock dunst jq wdisplays grimshot wtype isort pasystray swayidle pulsemixer gammastep brightnessctl fonts-font-awesome fonts-roboto firefox python3-jedi python3-i3ipc pass ranger
+apt-get install sway waybar rofi alacritty dotdrop neovim swaylock dunst jq wdisplays grimshot wtype isort pasystray swayidle pulsemixer gammastep brightnessctl fonts-font-awesome fonts-roboto firefox python3-jedi python3-i3ipc pass ranger
 pipx install black-macchiato fonts-hack
 
 ```
@@ -26,6 +26,7 @@ Manually install requirements that are not available from software repositories:
 - https://github.com/ikrivosheev/pa-notify
 - https://raw.githubusercontent.com/carnager/rofi-pass
 - https://github.com/ErikReider/SwayAudioIdleInhibit
+- https://github.com/jundi/ruutu
 
 Install ALE compatible linters:
 ```

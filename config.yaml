@@ -27,9 +27,6 @@ dotfiles:
   f_git_config:
     src: config/git/config
     dst: ~/.config/git/config
-  f_kanshi_config:
-    src: config/kanshi/config
-    dst: ~/.config/kanshi/config
   f_npmrc:
     src: npmrc
     dst: ~/.npmrc
@@ -104,10 +101,6 @@ dotfiles:
   f_paswitchprofile.sh:
     src: opt/scripts/paswitchprofile.sh
     dst: ~/.opt/scripts/paswitchprofile.sh
-  f_kanshi-current:
-    src: opt/bin/kanshi-current
-    dst: ~/.opt/bin/kanshi-current
-    chmod: '755'
   f_man.vim:
     src: config/nvim/ftplugin/man.vim
     dst: ~/.config/nvim/ftplugin/man.vim
@@ -173,7 +166,6 @@ profiles:
     - f_flake8
     - f_config.ini
     - f_git_config
-    - f_kanshi_config
     - f_npmrc
     - f_pylintrc
     - f_rifle.conf
@@ -196,7 +188,6 @@ profiles:
     - f_showclipboard.sh
     - f_paswitchsink.sh
     - f_paswitchprofile.sh
-    - f_kanshi-current
     - f_man.vim
     - f_git.vim
     - f_markdown.vim

@@ -281,7 +281,7 @@ bindsym $mod+F3 exec pulsemixer --change-volume -10
 bindsym $mod+F4 exec pulsemixer --change-volume +10
 bindsym $mod+Escape exec dunstctl close
 bindsym $mod+Shift+Escape exec dunstctl close-all
-bindsym $mod+y exec "killall kanshi && kanshi"
+bindsym $mod+y exec alacritty -e ruutu
 bindsym $mod+Shift+y exec wdisplays
 bindsym Print       exec grimshot --notify save screen
 bindsym Ctrl+Print exec grimshot --notify save area
@@ -297,7 +297,7 @@ exec blueman-applet
 exec pasystray -a
 exec_always swayidle -w timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 1800 'systemctl suspend -i' before-sleep 'swaylock -f -c 505050'
 exec sway-audio-idle-inhibit
-exec_always kanshi
+exec ruutu --daemon
 exec_always hdmi_sound_toggle.sh
 
 include /etc/sway/config.d/*
