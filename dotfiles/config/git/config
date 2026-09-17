@@ -25,6 +25,9 @@
 	df = diff
 	dc = diff --cached
 	tn = tag -n9
+	# same as "show-branch develop HEAD" but shows the actual name of the
+	# current branch in the output, instead of "HEAD"
+	ddev = "!git show-branch develop $(git branch --show-current)"
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 	recommit = "!f() { \
 	  MSG_FILE=\"$(git rev-parse --git-dir)/COMMIT_EDITMSG\"; \
