@@ -146,6 +146,9 @@ dotfiles:
   f_ignore:
     src: config/git/ignore
     dst: ~/.config/git/ignore
+  f_nvim.desktop:
+    src: local/share/applications/nvim.desktop
+    dst: ~/.local/share/applications/nvim.desktop
 actions:
   vue.vim: ln -s ~/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/vue.vim
   vim-plug-install: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -202,3 +205,4 @@ profiles:
     - f_user-dirs.dirs
     - f_dunstrc
     - f_ignore
+    - f_nvim.desktop

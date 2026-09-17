@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Neovim in Alacritty
+Type=Application
+Exec=alacritty -e nvim %F
+Terminal=false
+MimeType=text/plain;text/*;application/json;application/xml;
