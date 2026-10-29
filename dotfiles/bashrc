@@ -100,6 +100,7 @@ case $TERM in
         PROMPT_COMMAND='printf "\033k%s@%s:%s\033\\" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
         ;;
 esac
+export CLAUDE_CODE_DISABLE_TERMINAL_TITLE=1
 
 # Current directory for termite
 if [[ $TERM == xterm-termite ]] && [[ -f /etc/profile.d/vte.sh ]]; then
